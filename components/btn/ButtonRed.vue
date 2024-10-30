@@ -24,7 +24,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <a :href="btnLink" class="btn" :style="{ color: btnColor }">
+  <a :href="btnLink" :class="[btnColor, 'btn']">
     <span>{{ btnPicto }}</span>
     <span>{{ btnText }}</span>
   </a>
@@ -32,10 +32,23 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .btn {
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  width: fit-content;
+  gap: 0.5rem;
+  font-family: $body-font;
 
   &:hover {
-    background-color: blue;
+    filter: brightness(1.1);
+  }
+
+  &.primary {
+    background-color: $primary-color;
+    color: white;
   }
 }
 </style>

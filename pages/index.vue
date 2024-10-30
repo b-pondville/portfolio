@@ -6,7 +6,7 @@
     <p>Welcome to the home page</p>
     <btnButtonRed
       :btnText="'Hi'"
-      :btnColor="'red'"
+      :btnColor="'primary'"
       :btnPicto="'X '"
       :btnLink="'/'"
     />
