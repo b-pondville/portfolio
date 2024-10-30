@@ -1,75 +1,9 @@
-# Nuxt Minimal Starter
+# Benjamin Pondville - Portfolio
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to my portfolio repository! As a passionate **Frontend Developer** with 4 years of experience, I specialize in crafting intuitive and responsive user interfaces using modern web technologies such as **HTML**, **CSS**, and **JavaScript**. My journey in frontend development has honed my ability to build seamless user experiences that are both visually appealing and functionally robust.
 
-## Setup
+Driven by a desire to broaden my technical skill set and tackle more complex challenges, I am now transitioning into a **Fullstack Developer** role. Currently expanding my knowledge of backend technologies, my goal is to master the entire spectrum of web development, empowering me to design, build, and maintain complete applications from start to finish.
 
-Make sure to install dependencies:
+I'm excited to apply my growing expertise in new and innovative projects, and I'm always eager to connect with like-minded professionals who share a passion for technology and continuous learning. Explore this repository to see examples of my work and the progress of my full-stack journey!
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+[Connect with me on LinkedIn](https://www.linkedin.com/in/benjamin-pondville-45507314b/) for professional inquiries and collaboration opportunities.
