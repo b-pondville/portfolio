@@ -6,8 +6,8 @@ export default defineNuxtConfig({
   modules: ["@nuxtjs/google-fonts", "@nuxt/image"],
   googleFonts: {
     families: {
-      Raleway: true,
-      Lato: true,
+      Raleway: [100, 700],
+      Lato: [100, 300, 400, 700, 900],
     },
   },
   vite: {
@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       preprocessorOptions: {
         scss: {
           additionalData:
-            '@use "@/assets/styles/colors.scss" as *; @use "@/assets/styles/fonts.scss" as *;',
+            '@use "@/assets/styles/reset.scss" as *; @use "@/assets/styles/colors.scss" as *; @use "@/assets/styles/fonts.scss" as *;',
         },
       },
     },
