@@ -12,8 +12,7 @@ const props = defineProps({
   },
   btnPicto: {
     type: String,
-    default: "🔴",
-    required: true,
+    required: false,
   },
   btnLink: {
     type: String,
@@ -25,7 +24,7 @@ const props = defineProps({
 
 <template>
   <a :href="btnLink" :class="[btnColor, 'btn']">
-    <span>{{ btnPicto }}</span>
+    <img v-if="btnPicto" :src="btnPicto" alt="" />
     <span>{{ btnText }}</span>
   </a>
 </template>
