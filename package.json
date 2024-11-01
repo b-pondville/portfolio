@@ -17,6 +17,7 @@
   "devDependencies": {
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/google-fonts": "^3.2.0",
+    "@vueuse/nuxt": "^11.2.0",
     "sass": "^1.80.5"
   }
 }

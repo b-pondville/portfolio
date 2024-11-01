@@ -7,7 +7,7 @@ const props = defineProps({
   },
   btnColor: {
     type: String,
-    default: "black",
+    default: "primary",
     required: true,
   },
   btnPicto: {
@@ -19,13 +19,19 @@ const props = defineProps({
     default: "/",
     required: true,
   },
+  reversePicto: {
+    type: Boolean,
+    default: false,
+    required: false,
+  },
 });
 </script>
 
 <template>
   <a :href="btnLink" :class="[btnColor, 'btn']">
+    <span v-if="reversePicto">{{ btnText }}</span>
     <img v-if="btnPicto" :src="btnPicto" alt="" />
-    <span>{{ btnText }}</span>
+    <span v-if="!reversePicto">{{ btnText }}</span>
   </a>
 </template>
 
@@ -34,7 +40,8 @@ const props = defineProps({
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0rem 1rem;
+  height: 37px;
   border-radius: 0.5rem;
   text-decoration: none;
   width: fit-content;
@@ -48,6 +55,13 @@ const props = defineProps({
   &.primary {
     background-color: $primary-color;
     color: white;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    max-width: 22px;
+    max-height: 22px;
   }
 }
 </style>
