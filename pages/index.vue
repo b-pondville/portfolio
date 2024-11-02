@@ -1,24 +1,31 @@
 <script setup>
 definePageMeta({
-  layout: "default",
+  innerNavLinks: [
+    { name: "Hero", href: "#hero", active: ref(true) },
+    { name: "About", href: "#about", active: ref(false) },
+    { name: "Formation", href: "#formation", active: ref(false) },
+    { name: "Experience", href: "#experience", active: ref(false) },
+    { name: "Stack", href: "#stack", active: ref(false) },
+    { name: "Thank you", href: "#thankyou", active: ref(false) },
+  ],
 });
 </script>
 
 <template>
   <main>
-    <div id="hero">
+    <section id="hero">
       <h1>Benjamin<strong>Pondville</strong></h1>
-    </div>
+    </section>
 
-    <div id="about" style="height: 100vh"></div>
+    <section id="about" style="height: 100vh"></section>
 
-    <div id="formation" style="height: 100vh"></div>
+    <section id="formation" style="height: 100vh"></section>
 
-    <div id="experience" style="height: 100vh"></div>
+    <section id="experience" style="height: 100vh"></section>
 
-    <div id="stack" style="height: 100vh"></div>
+    <section id="stack" style="height: 100vh"></section>
 
-    <div id="thankyou" style="height: 100vh"></div>
+    <section id="thankyou" style="height: 100vh"></section>
   </main>
 </template>
 

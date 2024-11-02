@@ -31,7 +31,32 @@ let showContactInfo = ref(false);
 let showShareOptions = ref(false);
 
 //SCROLLING
-const scrollSquares = ref(5);
+const { y: windowScrollY } = useWindowScroll();
+const scrollTo = (id) => {
+  const el = document.querySelector(id);
+  if (el) {
+    windowScrollY.value = el.offsetTop;
+  }
+};
+
+onMounted(() => {
+  watch(windowScrollY, (newValue) => {
+    navLinks.forEach((link) => {
+      link.active = false;
+      if (
+        windowScrollY.value >= document.querySelector(link.href).offsetTop &&
+        windowScrollY.value <
+          document.querySelector(link.href).offsetTop +
+            document.querySelector(link.href).offsetHeight
+      ) {
+        link.active = true;
+      }
+    });
+  });
+});
+
+const route = useRoute();
+let navLinks = route.meta.innerNavLinks;
 </script>
 
 <template>
@@ -86,12 +111,15 @@ const scrollSquares = ref(5);
     </div>
 
     <div id="scroll-squares">
-      <div
-        v-for="square in scrollSquares"
-        :key="square"
+      <a
+        v-for="link in navLinks"
+        :key="link"
         class="scroll-square"
-        :class="{ active: square === 1 }"
-      ></div>
+        :class="{ active: link.active }"
+        :style="{ width: `${link * 2}px`, height: `${link * 2}px` }"
+        @click="scrollTo(link.href)"
+        :title="link.name"
+      ></a>
     </div>
   </div>
 
@@ -169,13 +197,15 @@ button {
   transform: translateY(-50%);
 
   .scroll-square {
-    width: 15px;
-    height: 15px;
+    width: 8px;
+    height: 8px;
     background-color: #8e8e8e;
-    border-radius: 1px;
+    border-radius: 2px;
     cursor: pointer;
+    transition: all 0.3s;
 
     &.active {
+      transform: scale(2);
       background-color: $primary-color;
     }
   }
