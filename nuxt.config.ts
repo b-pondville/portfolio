@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
   css: ["@/assets/styles/main.scss"],
-  modules: ["@nuxtjs/google-fonts", "@nuxt/image", "@vueuse/nuxt"],
+  modules: ["@nuxtjs/google-fonts", "@nuxt/image", "@vueuse/nuxt", "nuxt-anchorscroll"],
   googleFonts: {
     families: {
       Raleway: [100, 700],
