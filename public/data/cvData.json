@@ -1,25 +1,31 @@
 {
-  "name": "Benjamin [Last Name]",
+  "name": "Benjamin Pondville",
   "title": "Frontend Developer | Aspiring Indie Hacker",
   "contact": {
-    "email": "[Your Email]",
-    "phone": "[Your Phone Number]",
-    "linkedin": "[Your LinkedIn URL]"
+    "email": "b.pondville@hotmail.com",
+    "phone": "+262692337555",
+    "linkedin": "https://www.linkedin.com/in/benjamin-pondville-45507314b/"
   },
   "education": [
     {
       "program": "Frontend Developer",
       "institution": "OpenClassrooms",
+      "start": "2018",
+      "end": "2020",
       "degree": "RNCP Level 6 Diploma (Bac+4)"
     },
     {
       "program": "Web and Digital Production Manager",
       "institution": "Efficom",
+      "start": "2016",
+      "end": "2018",
       "degree": "RNCP Level 5 Diploma (Bac+2)"
     },
     {
       "program": "Graphic Industry",
       "institution": "Saint-Luc Tournai",
+      "start": "2011",
+      "end": "2016",
       "degree": "CESS (Belgian BAC) + PAO Operator Diploma"
     }
   ],

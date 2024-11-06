@@ -3,7 +3,7 @@ definePageMeta({
   innerNavLinks: [
     { name: "Hero", href: "#hero", active: ref(true) },
     { name: "About", href: "#about", active: ref(false) },
-    { name: "Formation", href: "#formation", active: ref(false) },
+    { name: "Education", href: "#education", active: ref(false) },
     { name: "Experience", href: "#experience", active: ref(false) },
     { name: "Stack", href: "#stack", active: ref(false) },
     { name: "Thank you", href: "#thankyou", active: ref(false) },
