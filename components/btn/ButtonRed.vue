@@ -8,7 +8,7 @@ const props = defineProps({
   btnColor: {
     type: String,
     default: "primary",
-    required: true,
+    required: false,
   },
   btnPicto: {
     type: String,
