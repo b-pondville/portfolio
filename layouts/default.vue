@@ -29,34 +29,6 @@ function startShare() {
 
 let showContactInfo = ref(false);
 let showShareOptions = ref(false);
-
-//SCROLLING
-const { y: windowScrollY } = useWindowScroll();
-const scrollTo = (id) => {
-  const el = document.querySelector(id);
-  if (el) {
-    windowScrollY.value = el.offsetTop;
-  }
-};
-
-onMounted(() => {
-  watch(windowScrollY, (newValue) => {
-    navLinks.forEach((link) => {
-      link.active = false;
-      if (
-        windowScrollY.value >= document.querySelector(link.href).offsetTop &&
-        windowScrollY.value <
-          document.querySelector(link.href).offsetTop +
-            document.querySelector(link.href).offsetHeight
-      ) {
-        link.active = true;
-      }
-    });
-  });
-});
-
-const route = useRoute();
-let navLinks = route.meta.innerNavLinks;
 </script>
 
 <template>
@@ -110,17 +82,7 @@ let navLinks = route.meta.innerNavLinks;
       />
     </div>
 
-    <div id="scroll-squares">
-      <a
-        v-for="link in navLinks"
-        :key="link"
-        class="scroll-square"
-        :class="{ active: link.active }"
-        :style="{ width: `${link * 2}px`, height: `${link * 2}px` }"
-        @click="scrollTo(link.href)"
-        :title="link.name"
-      ></a>
-    </div>
+    <LayoutHeaderNavSquares />
   </div>
 
   <slot />
@@ -133,6 +95,7 @@ let navLinks = route.meta.innerNavLinks;
   left: 0;
   height: 100vh;
   width: 100vw;
+  z-index: 100;
 }
 
 #btn-contact {
@@ -184,30 +147,6 @@ button {
     min-width: 30px;
     max-height: 25px;
     height: auto;
-  }
-}
-
-#scroll-squares {
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  position: absolute;
-  top: 50%;
-  left: 1rem;
-  transform: translateY(-50%);
-
-  .scroll-square {
-    width: 8px;
-    height: 8px;
-    background-color: #8e8e8e;
-    border-radius: 2px;
-    cursor: pointer;
-    transition: all 0.3s;
-
-    &.active {
-      transform: scale(2);
-      background-color: $primary-color;
-    }
   }
 }
 </style>
