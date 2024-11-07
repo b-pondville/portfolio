@@ -30,6 +30,18 @@ if (import.meta.client) {
     });
   });
 }
+
+const returnStyleFromIndex = (index) => {
+  const size = 12;
+  const style = ref({
+    width: size + "px",
+    height: size + "px",
+    transform: `scale(${
+      index === 0 ? 1 : (navLinks.length - index) / (size / 2 + 1)
+    })`,
+  });
+  return style.value;
+};
 </script>
 
 <template>
@@ -41,6 +53,8 @@ if (import.meta.client) {
       :class="{ active: link.active }"
       :title="link.name"
       @click="scrollTo(link)"
+    >
+      <span class="square" :style="returnStyleFromIndex(index)"></span
     ></span>
   </div>
 </template>
@@ -64,20 +78,18 @@ if (import.meta.client) {
     align-items: center;
     cursor: pointer;
 
-    &::after {
+    .square {
       content: "";
       display: block;
-      width: 8px;
-      height: 8px;
       background-color: #8e8e8e;
       border-radius: 1px;
       transition: all 0.3s;
     }
 
     &.active {
-      &::after {
-        background-color: $primary-color;
+      .square {
         transform: scale(2);
+        background-color: $primary-color;
       }
     }
   }
