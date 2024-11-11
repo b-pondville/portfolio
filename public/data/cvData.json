@@ -190,34 +190,209 @@
     }
   ],
   "skills": {
-    "technical": [
-      "HTML5",
-      "CSS3",
-      "JavaScript ES6",
-      "jQuery",
-      "Sass",
-      "Bootstrap",
-      "WordPress",
-      "ACF",
-      "PHP",
-      "MySQL",
-      "Git",
-      "Zapier"
+    "front": [
+      {
+        "title": "HTML5",
+        "level": 5,
+        "image": "icons/icon-html.svg"
+      },
+      {
+        "title": "CSS3",
+        "level": 5,
+        "image": "icons/icon-css.svg"
+      },
+      {
+        "title": "JS ES6",
+        "level": 5,
+        "image": "icons/icon-js.svg"
+      },
+      {
+        "title": "Vue.js",
+        "level": 5,
+        "image": "icons/icon-vuejs.svg"
+      },
+      {
+        "title": "Nuxt.js",
+        "level": 5,
+        "image": "icons/icon-nuxt.svg"
+      },
+      {
+        "title": "Sass",
+        "level": 5,
+        "image": "icons/icon-sass.svg"
+      },
+      {
+        "title": "Bootstrap",
+        "level": 5,
+        "image": "icons/icon-bootstrap.svg"
+      },
+      {
+        "title": "tailwindcss",
+        "level": 5,
+        "image": "icons/icon-tailwind.svg"
+      },
+      {
+        "title": "jQuery",
+        "level": 5,
+        "image": "icons/icon-jquery.svg"
+      }
+    ],
+    "back": [
+      {
+        "title": "PHP",
+        "level": 3,
+        "image": "icons/icon-php.svg"
+      },
+      {
+        "title": "Node.js",
+        "level": 3,
+        "image": "icons/icon-nodejs.svg"
+      }
+    ],
+    "database": [
+      {
+        "title": "MySQL",
+        "level": 3,
+        "image": "icons/icon-mysql.svg"
+      }
+    ],
+    "soft": [
+      {
+        "title": "Problem-solving",
+        "level": 5,
+        "image": "icons/icon-problem-solving.svg"
+      },
+      {
+        "title": "Stress management",
+        "level": 5,
+        "image": "icons/icon-stress.svg"
+      },
+      {
+        "title": "Organization",
+        "level": 5,
+        "image": "icons/icon-organisation.svg"
+      },
+      {
+        "title": "Optimisation",
+        "level": 5,
+        "image": "icons/icon-optimisation.svg"
+      },
+      {
+        "title": "Collaboration",
+        "level": 5,
+        "image": "icons/icon-teamwork.svg"
+      },
+      {
+        "title": "Adaptability",
+        "level": 5,
+        "image": "icons/icon-adaptability.svg"
+      }
+    ],
+    "project": [
+      {
+        "title": "Agile",
+        "level": 4,
+        "image": "icons/icon-agile.svg"
+      },
+      {
+        "title": "UML",
+        "level": 4,
+        "image": "icons/icon-uml.svg"
+      }
+    ],
+    "designtools": [
+      {
+        "title": "Figma",
+        "level": 5,
+        "image": "icons/icon-figma.svg"
+      },
+      {
+        "title": "Adobe XD",
+        "level": 4,
+        "image": "icons/icon-xd.svg"
+      },
+      {
+        "title": "Sketch",
+        "level": 4,
+        "image": "icons/icon-sketch.svg"
+      },
+      {
+        "title": "Photoshop",
+        "level": 5,
+        "image": "icons/icon-ps.svg"
+      },
+      {
+        "title": "Illustrator",
+        "level": 5,
+        "image": "icons/icon-ai.svg"
+      },
+      {
+        "title": "InDesign",
+        "level": 5,
+        "image": "icons/icon-id.svg"
+      }
+    ],
+    "versioning": [
+      {
+        "title": "Git",
+        "level": 5,
+        "image": "icons/icon-git.svg"
+      },
+      {
+        "title": "GitHub",
+        "level": 5,
+        "image": "icons/icon-github.svg"
+      },
+      {
+        "title": "Azure DevOps",
+        "level": 3,
+        "image": "icons/icon-azure.svg"
+      }
+    ],
+    "devtools": [
+      {
+        "title": "VS Code",
+        "level": 5,
+        "image": "icons/icon-vscode.svg"
+      },
+      {
+        "title": "Copilot",
+        "level": 5,
+        "image": "icons/icon-copilot.svg"
+      }
+    ],
+    "package": [
+      {
+        "title": "npm",
+        "level": 5,
+        "image": "icons/icon-npm.svg"
+      }
     ],
     "design": [
-      "Adobe XD",
-      "Figma",
-      "Sketch",
-      "Illustrator",
-      "InDesign",
-      "Photoshop"
+      {
+        "title": "Design System",
+        "level": 5,
+        "image": "icons/icon-designsystem.svg"
+      }
+    ],
+    "app": [
+      {
+        "title": "Notion",
+        "level": 5,
+        "image": "icons/icon-notion.svg"
+      },
+      {
+        "title": "Trello",
+        "level": 5,
+        "image": "icons/icon-trello.svg"
+      }
+    ],
+    "learning": [
+      {
+        "title": "Learning",
+        "level": 5,
+        "image": "icons/icon-learning.svg"
+      }
     ]
-  },
-  "soft_skills": [
-    "Creative problem solver",
-    "Efficient communicator",
-    "Team collaboration",
-    "Continuous learner",
-    "English proficiency"
-  ]
+  }
 }

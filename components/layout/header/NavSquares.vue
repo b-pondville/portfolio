@@ -88,7 +88,7 @@ const returnStyleFromIndex = (index) => {
 
     &.active {
       .square {
-        transform: scale(2);
+        transform: scale(1.5) !important;
         background-color: $primary-color;
       }
     }

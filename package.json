@@ -10,11 +10,13 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@vueuse/motion": "^2.2.6",
     "nuxt": "^3.13.2",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@formkit/auto-animate": "^0.8.2",
     "@nuxt/image": "^1.8.1",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@vueuse/nuxt": "^11.2.0",

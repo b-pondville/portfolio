@@ -29,21 +29,55 @@ function startShare() {
 
 let showContactInfo = ref(false);
 let showShareOptions = ref(false);
+
+// Fonction générique pour gérer l'ajout et la suppression du listener de scroll
+const handleScrollClose = (stateRef) => {
+  const windowScrollY = window.scrollY;
+
+  const scrollHandler = () => {
+    if (
+      window.scrollY >= windowScrollY + 100 ||
+      window.scrollY <= windowScrollY - 100
+    ) {
+      stateRef.value = false;
+      window.removeEventListener("scroll", scrollHandler); // Supprime le listener après exécution
+    }
+  };
+
+  // Ajoute le listener si l'état est vrai (affiché)
+  if (stateRef.value) {
+    window.addEventListener("scroll", scrollHandler);
+  }
+};
+
+// Fonction pour basculer les informations de contact
+const toggleContactInfo = () => {
+  showContactInfo.value = !showContactInfo.value;
+  handleScrollClose(showContactInfo);
+};
+
+// Fonction pour basculer les options de partage
+const toggleShareOptions = () => {
+  showShareOptions.value = !showShareOptions.value;
+  handleScrollClose(showShareOptions);
+};
 </script>
 
 <template>
   <div id="layout">
-    <button id="btn-contact" @click="showContactInfo = !showContactInfo">
+    <button id="btn-contact" @click="toggleContactInfo">
       <NuxtImg src="icons/icon-contact.svg" />
     </button>
     <div v-show="showContactInfo" class="contact-infos">
       <BtnButtonRed
+        v-motion-slide-visible-right
         :btnLink="'/'"
         :btnPicto="'/icons/icon-call.svg'"
         :btnText="'Appeler'"
         :reversePicto="true"
       />
       <BtnButtonRed
+        v-motion-slide-visible-right
         :btnLink="'/'"
         :btnPicto="'/icons/icon-mail.svg'"
         :btnText="'Envoyer un mail'"
@@ -51,23 +85,26 @@ let showShareOptions = ref(false);
       />
     </div>
 
-    <button id="btn-share" @click="showShareOptions = !showShareOptions">
+    <button id="btn-share" @click="toggleShareOptions">
       <NuxtImg src="icons/icon-export.svg" />
     </button>
     <div v-show="showShareOptions" class="share-options">
       <BtnButtonRed
+        v-motion-slide-visible-left
         :btnLink="'/'"
         :btnPicto="'/icons/icon-download.svg'"
         :btnText="'Download'"
       />
 
       <BtnButtonRed
+        v-motion-slide-visible-left
         :btnLink="'/'"
         :btnPicto="'/icons/icon-print.svg'"
         :btnText="'Print'"
       />
 
       <BtnButtonRed
+        v-motion-slide-visible-left
         v-if="isClipboardSupported"
         @click.prevent="copyToClipboard"
         :btnPicto="'/icons/icon-copy.svg'"
@@ -75,6 +112,7 @@ let showShareOptions = ref(false);
       />
 
       <BtnButtonRed
+        v-motion-slide-visible-left
         v-if="isShareSupported"
         @click.prevent="startShare"
         :btnPicto="'/icons/icon-export.svg'"
@@ -100,16 +138,16 @@ let showShareOptions = ref(false);
 
 #btn-contact {
   position: absolute;
-  top: 1rem;
+  top: 1.5rem;
   right: 1rem;
 
   + .contact-infos {
     margin-top: 0.5rem;
     position: absolute;
-    top: 3rem;
-    right: 1rem;
+    top: 1rem;
+    right: 4rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-end;
     gap: 0.5rem;
   }
