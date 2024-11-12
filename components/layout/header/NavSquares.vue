@@ -32,15 +32,16 @@ if (import.meta.client) {
 }
 
 const returnStyleFromIndex = (index) => {
+  const activeIndex = navLinks.findIndex((link) => link.active);
+  const distance = Math.abs(activeIndex - index) || 1; // Pour éviter la division par zéro
   const size = 12;
-  const style = ref({
-    width: size + "px",
-    height: size + "px",
-    transform: `scale(${
-      index === 0 ? 1 : (navLinks.length - index) / (size / 2 + 1)
-    })`,
-  });
-  return style.value;
+  const scaleFactor = 1 / distance + 0.1; // Ajuste pour une décroissance plus douce
+
+  return {
+    width: `${size}px`,
+    height: `${size}px`,
+    transform: `scale(${scaleFactor})`,
+  };
 };
 </script>
 
