@@ -28,7 +28,7 @@ const handleScroll = () => {
   const windowHeight = window.innerHeight;
   const bottomOfPage = pageHeight - windowHeight;
 
-  if (scrollPosition >= bottomOfPage) {
+  if (scrollPosition >= bottomOfPage - 10) {
     pageBottomReached.value = true;
   } else {
     pageBottomReached.value = false;
