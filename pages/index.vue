@@ -12,15 +12,7 @@ definePageMeta({
 
 import cvData from "~/public/data/cvData.json";
 
-const {
-  name,
-  title,
-  contact,
-  education,
-  experience,
-  skills,
-  soft_skills: softSkills,
-} = cvData;
+const { education, experience, skills } = cvData;
 
 const indexIsPair = (index) => index % 2 !== 0;
 
@@ -240,13 +232,23 @@ onMounted(() => {
 
 #about {
   height: 100vh;
+  overflow: scroll;
+
+  @media (max-width: 1024px) {
+    .highlight {
+      left: 0;
+      max-width: 100%;
+      height: auto;
+      padding: 2rem;
+    }
+  }
 
   .highlight {
     position: relative;
     top: 0;
     left: 60%;
     max-width: calc(30% - 6rem);
-    height: calc(100vh - 6rem);
+    height: calc(100% - 6rem);
     padding: 3rem;
     background-color: $primary-color;
 
