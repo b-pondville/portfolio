@@ -17,7 +17,7 @@ const props = defineProps({
   btnLink: {
     type: String,
     default: "/",
-    required: true,
+    required: false,
   },
   reversePicto: {
     type: Boolean,
@@ -29,9 +29,9 @@ const props = defineProps({
 
 <template>
   <a :href="btnLink" :class="[btnColor, 'btn']">
-    <span v-if="reversePicto">{{ btnText }}</span>
+    <p v-if="reversePicto">{{ btnText }}</p>
     <img v-if="btnPicto" :src="btnPicto" alt="" />
-    <span v-if="!reversePicto">{{ btnText }}</span>
+    <p v-if="!reversePicto">{{ btnText }}</p>
   </a>
 </template>
 
@@ -48,6 +48,7 @@ const props = defineProps({
   gap: 0.5rem;
   font-family: $body-font;
   border: 2px solid $bkg-color;
+  text-wrap: nowrap;
 
   &:hover {
     filter: brightness(1.1);

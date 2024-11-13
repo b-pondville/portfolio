@@ -12,7 +12,7 @@ definePageMeta({
 
 import cvData from "~/public/data/cvData.json";
 
-const { education, experience, skills } = cvData;
+const { name, surname, education, experience, skills } = cvData;
 
 const indexIsPair = (index) => index % 2 !== 0;
 
@@ -43,7 +43,9 @@ onMounted(() => {
 <template>
   <main>
     <section id="hero">
-      <h1 v-motion-slide-visible-bottom>Benjamin<strong>Pondville</strong></h1>
+      <h1 v-motion-slide-visible-bottom>
+        {{ name }}<strong>{{ surname }}</strong>
+      </h1>
     </section>
 
     <section id="about">

@@ -1,5 +1,6 @@
 {
-  "name": "Benjamin Pondville",
+  "name": "Benjamin",
+  "surname": "Pondville",
   "title": "Frontend Developer | Aspiring Indie Hacker",
   "contact": {
     "email": "b.pondville@hotmail.com",
@@ -7,6 +8,13 @@
     "linkedin": "https://www.linkedin.com/in/benjamin-pondville-45507314b/"
   },
   "education": [
+    {
+      "program": "Web Developer",
+      "institution": "Self-Taught",
+      "start": "2020",
+      "end": "Lifelong Learning",
+      "degree": "Experience and Practice"
+    },
     {
       "program": "Frontend Developer",
       "institution": "OpenClassrooms",

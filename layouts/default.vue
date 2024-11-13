@@ -2,6 +2,10 @@
 //IMPORTS
 const { share, isSupported: isShareSupported } = useShare();
 
+import cvData from "~/public/data/cvData.json";
+
+const { contact } = cvData;
+
 //Sharing setup
 const url = useRequestURL(); //get url
 const currentUrl = url.href; //define href
@@ -61,6 +65,16 @@ const toggleShareOptions = () => {
   showShareOptions.value = !showShareOptions.value;
   handleScrollClose(showShareOptions);
 };
+
+// Fonction pour télécharger le CV
+const downloadPdf = () => {
+  window.open("/cv.pdf", "_blank");
+};
+
+// Fonction pour imprimer la page
+const printPage = () => {
+  window.print();
+};
 </script>
 
 <template>
@@ -71,16 +85,16 @@ const toggleShareOptions = () => {
     <div v-show="showContactInfo" class="contact-infos">
       <BtnButtonRed
         v-motion-slide-visible-right
-        :btnLink="'/'"
+        :btnLink="'tel:' + contact.phone"
         :btnPicto="'/icons/icon-call.svg'"
-        :btnText="'Appeler'"
+        :btnText="'Call me'"
         :reversePicto="true"
       />
       <BtnButtonRed
         v-motion-slide-visible-right
-        :btnLink="'/'"
+        :btnLink="'mailto:' + contact.email"
         :btnPicto="'/icons/icon-mail.svg'"
-        :btnText="'Envoyer un mail'"
+        :btnText="'Email me'"
         :reversePicto="true"
       />
     </div>
@@ -91,16 +105,16 @@ const toggleShareOptions = () => {
     <div v-show="showShareOptions" class="share-options">
       <BtnButtonRed
         v-motion-slide-visible-left
-        :btnLink="'/'"
         :btnPicto="'/icons/icon-download.svg'"
         :btnText="'Download'"
+        @click.prevent="downloadPdf"
       />
 
       <BtnButtonRed
         v-motion-slide-visible-left
-        :btnLink="'/'"
         :btnPicto="'/icons/icon-print.svg'"
         :btnText="'Print'"
+        @click.prevent="printPage"
       />
 
       <BtnButtonRed
