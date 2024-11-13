@@ -3,7 +3,11 @@ export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   ssr: true,
-  css: ["@/assets/styles/main.scss"],
+  css: [
+    "@/assets/styles/reset.scss", // Ensure reset styles are loaded first
+    "@/assets/styles/fonts.scss", // Load font styles after reset and variables
+    "@/assets/styles/main.scss", // Load main styles last
+  ],
   modules: [
     "@nuxtjs/google-fonts",
     "@nuxt/image",
@@ -22,8 +26,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData:
-            '@use "@/assets/styles/reset.scss" as *; @use "@/assets/styles/colors.scss" as *; @use "@/assets/styles/fonts.scss" as *;',
+          additionalData: '@use "@/assets/styles/variables.scss" as *;',
         },
       },
     },

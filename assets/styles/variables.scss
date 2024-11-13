@@ -1,0 +1,29 @@
+// Colors
+$primary-color: #b02000;
+$bkg-color: #1a1a1a;
+
+// Fonts
+$font-family: "Raleway", sans-serif;
+$heading-font: "Raleway", sans-serif;
+$body-font: "Lato", sans-serif;
+
+// Breakpoints
+$breakpoint-tablet: 992px;
+$breakpoint-mobile: 768px;
+$breakpoint-small: 576px;
+
+@mixin respond-to($breakpoint) {
+  @if $breakpoint == tablet {
+    @media (max-width: $breakpoint-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == mobile {
+    @media (max-width: $breakpoint-mobile) {
+      @content;
+    }
+  } @else if $breakpoint == small {
+    @media (max-width: $breakpoint-small) {
+      @content;
+    }
+  }
+}
