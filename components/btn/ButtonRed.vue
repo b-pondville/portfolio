@@ -47,6 +47,7 @@ const props = defineProps({
   width: fit-content;
   gap: 0.5rem;
   font-family: $body-font;
+  border: 2px solid $bkg-color;
 
   &:hover {
     filter: brightness(1.1);

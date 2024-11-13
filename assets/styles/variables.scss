@@ -12,7 +12,7 @@ $breakpoint-tablet: 992px;
 $breakpoint-mobile: 768px;
 $breakpoint-small: 576px;
 
-@mixin respond-to($breakpoint) {
+@mixin breakpoint($breakpoint) {
   @if $breakpoint == tablet {
     @media (max-width: $breakpoint-tablet) {
       @content;

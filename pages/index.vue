@@ -1,8 +1,8 @@
 <script setup>
 definePageMeta({
   innerNavLinks: [
-    { name: "Hero", href: "#hero", active: ref(true) },
-    { name: "About", href: "#about", active: ref(false) },
+    { name: "Hello", href: "#hero", active: ref(true) },
+    { name: "About me", href: "#about", active: ref(false) },
     { name: "Education", href: "#education", active: ref(false) },
     { name: "Experience", href: "#experience", active: ref(false) },
     { name: "Skills", href: "#skills", active: ref(false) },
@@ -220,6 +220,10 @@ onMounted(() => {
   height: 100%;
   background-color: $primary-color;
   z-index: -1;
+
+  @include breakpoint(tablet) {
+    left: 50%;
+  }
 }
 
 #about,
@@ -234,13 +238,8 @@ onMounted(() => {
   height: 100vh;
   overflow: scroll;
 
-  @media (max-width: 1024px) {
-    .highlight {
-      left: 0;
-      max-width: 100%;
-      height: auto;
-      padding: 2rem;
-    }
+  @include breakpoint(tablet) {
+    height: auto;
   }
 
   .highlight {
@@ -259,6 +258,13 @@ onMounted(() => {
     p + p {
       margin-top: 1.5rem;
     }
+
+    @include breakpoint(tablet) {
+      left: 0;
+      max-width: 100%;
+      height: auto;
+      padding: 3rem 5rem;
+    }
   }
 }
 
@@ -276,6 +282,10 @@ onMounted(() => {
     gap: 2rem;
     overflow: visible;
     width: 40%;
+
+    @include breakpoint(tablet) {
+      left: 50%;
+    }
 
     h2 {
       background-color: $primary-color;
@@ -323,6 +333,10 @@ onMounted(() => {
     gap: 1rem;
     padding: 5rem;
 
+    @include breakpoint(tablet) {
+      grid-template: auto / repeat(3, 1fr);
+    }
+
     section {
       display: grid;
       grid-template: subgrid / subgrid;
@@ -333,61 +347,121 @@ onMounted(() => {
       &.front {
         grid-column: 1 / 4;
         grid-row: 1 / 4;
+
+        @include breakpoint(tablet) {
+          grid-column: 1 / 4;
+          grid-row: 1 / 4;
+        }
       }
 
       &.devtools {
         grid-column: 5 / 7;
         grid-row: 1 / 2;
+
+        @include breakpoint(tablet) {
+          grid-column: 2 / 4;
+          grid-row: 4 / 5;
+        }
       }
 
       &.package {
         grid-column: 4 / 5;
         grid-row: 1 / 2;
+
+        @include breakpoint(tablet) {
+          grid-column: 1 / 2;
+          grid-row: 4 / 5;
+        }
       }
 
       &.back {
         grid-column: 4 / 6;
         grid-row: 3 / 4;
+
+        @include breakpoint(tablet) {
+          grid-column: 1 / 3;
+          grid-row: 6 / 7;
+        }
       }
 
       &.database {
         grid-column: 6 / 7;
         grid-row: 3 / 4;
+
+        @include breakpoint(tablet) {
+          grid-column: 3 / 4;
+          grid-row: 6 / 7;
+        }
       }
 
       &.versioning {
         grid-column: 4 / 7;
         grid-row: 2 / 3;
+
+        @include breakpoint(tablet) {
+          grid-column: 1 / 4;
+          grid-row: 5 / 6;
+        }
       }
 
       &.soft {
         grid-column: 4 / 7;
         grid-row: 4 / 6;
+
+        @include breakpoint(tablet) {
+          grid-column: 1 / 4;
+          grid-row: 7 / 9;
+        }
       }
 
       &.project {
         grid-column: 1 / 3;
         grid-row: 4 / 5;
+
+        @include breakpoint(tablet) {
+          grid-column: 1 / 3;
+          grid-row: 9 / 10;
+        }
       }
 
       &.design {
         grid-column: 3 / 4;
         grid-row: 4 / 5;
+
+        @include breakpoint(tablet) {
+          grid-column: 3 / 4;
+          grid-row: 9 / 10;
+        }
       }
 
       &.designtools {
         grid-column: 1 / 4;
         grid-row: 5 / 7;
+
+        @include breakpoint(tablet) {
+          grid-column: 1 / 4;
+          grid-row: 10 / 12;
+        }
       }
 
       &.app {
         grid-column: 4 / 6;
         grid-row: 6 / 7;
+
+        @include breakpoint(tablet) {
+          grid-column: 2 / 4;
+          grid-row: 12 / 13;
+        }
       }
 
       &.learning {
         grid-column: 6 / 7;
         grid-row: 6 / 7;
+
+        @include breakpoint(tablet) {
+          grid-column: 1 / 2;
+          grid-row: 12 / 13;
+        }
       }
 
       .skill {
