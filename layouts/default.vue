@@ -164,6 +164,7 @@ const printPage = () => {
     flex-direction: row;
     align-items: flex-end;
     gap: 0.5rem;
+    flex-wrap: wrap;
   }
 }
 
@@ -181,6 +182,7 @@ const printPage = () => {
     flex-direction: row;
     align-items: flex-start;
     gap: 0.5rem;
+    flex-wrap: wrap;
   }
 }
 

@@ -212,6 +212,14 @@ onMounted(() => {
   height: 100vh;
   gap: 1rem;
   background-color: $bkg-color;
+
+  h1 {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 #vertical-line {
@@ -225,6 +233,10 @@ onMounted(() => {
 
   @include breakpoint(tablet) {
     left: 50%;
+  }
+
+  @include breakpoint(mobile) {
+    display: none;
   }
 }
 
@@ -289,6 +301,12 @@ onMounted(() => {
       left: 50%;
     }
 
+    @include breakpoint(mobile) {
+      width: 100%;
+      left: 0;
+      padding: 0 0 0 3rem;
+    }
+
     h2 {
       background-color: $primary-color;
       width: fit-content;
@@ -305,6 +323,11 @@ onMounted(() => {
       padding-right: 25px;
       width: fit-content;
       text-align: right;
+
+      @include breakpoint(mobile) {
+        text-align: left;
+        transform: translate(0);
+      }
     }
 
     .right {
