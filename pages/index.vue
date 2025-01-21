@@ -37,6 +37,7 @@ const handleScroll = () => {
 
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
+  const isMobile = window.innerWidth < 768;
 });
 </script>
 
@@ -326,7 +327,8 @@ onMounted(() => {
 
       @include breakpoint(mobile) {
         text-align: left;
-        transform: translate(0);
+        transform: translate(0) !important;
+        padding: 0 25px;
       }
     }
 
@@ -360,6 +362,10 @@ onMounted(() => {
 
     @include breakpoint(tablet) {
       grid-template: auto / repeat(3, 1fr);
+    }
+
+    @include breakpoint(mobile) {
+      padding: 3rem;
     }
 
     section {
