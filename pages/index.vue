@@ -137,6 +137,7 @@ onMounted(() => {
     </section>
 
     <section id="skills">
+      <h2 class="left">What for?</h2>
       <div class="content">
         <section
           v-for="(block, key, index) in skills"
@@ -354,6 +355,12 @@ onMounted(() => {
 #skills {
   background-color: $bkg-color;
 
+  h2 {
+    text-align: center;
+    padding: 1rem;
+    margin-top: 100px;
+  }
+
   .content {
     display: grid;
     grid-template: auto / repeat(6, 1fr);
@@ -503,12 +510,12 @@ onMounted(() => {
         text-align: center;
         gap: 1rem;
 
-        img {
-          max-width: 65px;
-        }
+        @include breakpoint(mobile) {
+          padding: 0.5rem;
 
-        p {
-          font-size: 0.8em;
+          img {
+            max-width: 50px;
+          }
         }
       }
     }
