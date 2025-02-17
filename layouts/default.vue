@@ -70,11 +70,6 @@ const toggleShareOptions = () => {
 const downloadPdf = () => {
   window.open("/cv.pdf", "_blank");
 };
-
-// Fonction pour imprimer la page
-const printPage = () => {
-  window.print();
-};
 </script>
 
 <template>
@@ -108,13 +103,6 @@ const printPage = () => {
         :btnPicto="'/icons/icon-download.svg'"
         :btnText="'Download'"
         @click.prevent="downloadPdf"
-      />
-
-      <BtnButtonRed
-        v-motion-slide-visible-left
-        :btnPicto="'/icons/icon-print.svg'"
-        :btnText="'Print'"
-        @click.prevent="printPage"
       />
 
       <BtnButtonRed

@@ -53,25 +53,21 @@ onMounted(() => {
       <div class="highlight">
         <h2>Shortcut</h2>
         <p>
-          As a passionate Frontend Developer with 4 years of experience, I
-          specialize in creating intuitive and responsive user interfaces using
-          modern web technologies like HTML, CSS and JavaScript. My journey in
-          frontend development has sharpened my skills in building seamless user
-          experiences that are both visually appealing and functionally robust.
-        </p>
-
-        <p>
-          Driven by a desire to broaden my technical horizons and tackle more
-          complex challenges, I'm now transitioning into a Fullstack Developer
-          role. I'm currently expanding my knowledge of backend technologies. My
-          goal is to master the full spectrum of web development, enabling me to
-          build and maintain entire applications from start to finish.
+          Hi, I'm Benjamin, a front-end developer specializing in Vue.js and
+          Nuxt.js. Passionate about clean, maintainable code and intuitive user
+          experiences, I focus on building high-performance web applications
+          that seamlessly blend functionality and aesthetics.
         </p>
         <p>
-          I'm excited to apply my growing skill set in new and innovative
-          projects, and I'm always eager to connect with like-minded
-          professionals who share a passion for technology and continuous
-          learning.
+          With a keen eye for detail and a strong problem-solving mindset, I
+          thrive on crafting engaging interfaces, optimizing performance, and
+          ensuring smooth user interactions. Beyond coding, I stay up to date
+          with the latest web technologies to continuously refine my skills and
+          deliver modern, efficient solutions.
+        </p>
+        <p>
+          If you're looking for a dedicated front-end developer to enhance your
+          team or project, let's connect!
         </p>
       </div>
     </section>
@@ -146,13 +142,7 @@ onMounted(() => {
           :delay="animDelay"
           :duration="animDuration"
         >
-          <div
-            class="skill"
-            v-for="(skill, key) in block"
-            v-motion-pop-visible-once
-            :delay="animDelay"
-            :duration="animDuration"
-          >
+          <div class="skill" v-for="(skill, key) in block">
             <NuxtImg
               :src="skill.image"
               :alt="skill.name"
@@ -358,14 +348,14 @@ onMounted(() => {
   h2 {
     text-align: center;
     padding: 1rem;
-    margin-top: 100px;
+    padding-top: 100px;
   }
 
   .content {
     display: grid;
     grid-template: auto / repeat(6, 1fr);
     gap: 1rem;
-    padding: 5rem;
+    padding: 2rem 5rem 5rem 5rem;
 
     @include breakpoint(tablet) {
       grid-template: auto / repeat(3, 1fr);
@@ -538,8 +528,8 @@ onMounted(() => {
 
   .talk {
     position: absolute;
-    top: 5rem;
-    right: 3.5rem;
+    top: 130px;
+    right: 55px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -554,8 +544,8 @@ onMounted(() => {
 
   .share {
     position: absolute;
-    bottom: 4.5rem;
-    left: 3.8rem;
+    bottom: 75px;
+    left: 65px;
     display: flex;
     flex-direction: row;
     justify-content: center;
