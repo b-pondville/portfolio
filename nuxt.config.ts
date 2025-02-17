@@ -42,8 +42,4 @@ export default defineNuxtConfig({
       "2xl": 1536,
     },
   },
-  server: {
-    port: 4000, // Définir le port sur 4000
-    host: "0.0.0.0", // Écouter sur toutes les interfaces
-  },
 });
