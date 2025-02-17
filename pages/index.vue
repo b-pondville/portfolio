@@ -305,7 +305,7 @@ onMounted(() => {
     @include breakpoint(mobile) {
       width: 100%;
       left: 0;
-      padding: 0 0 0 3rem;
+      padding: 0rem;
     }
 
     h2 {
@@ -365,7 +365,7 @@ onMounted(() => {
     }
 
     @include breakpoint(mobile) {
-      padding: 3rem;
+      padding: 25px;
     }
 
     section {
@@ -502,6 +502,14 @@ onMounted(() => {
         padding: 1rem;
         text-align: center;
         gap: 1rem;
+
+        img {
+          max-width: 65px;
+        }
+
+        p {
+          font-size: 0.8em;
+        }
       }
     }
   }
@@ -514,6 +522,12 @@ onMounted(() => {
   align-items: center;
   height: 100vh;
   background-color: $bkg-color;
+  padding: 25px;
+
+  h2 {
+    text-align: center;
+    text-wrap: balance;
+  }
 
   .talk {
     position: absolute;

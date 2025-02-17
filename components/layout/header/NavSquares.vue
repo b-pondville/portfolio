@@ -131,6 +131,10 @@ const isHovered = ref(false);
       text-wrap: nowrap;
     }
   }
+
+  @include breakpoint(mobile) {
+    display: none;
+  }
 }
 
 #layer {
