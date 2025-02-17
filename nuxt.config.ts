@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  base: "/portfolio/",
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
   ssr: true,
@@ -41,9 +42,5 @@ export default defineNuxtConfig({
       xxl: 1536,
       "2xl": 1536,
     },
-  },
-  server: {
-    port: 4000, // Définir le port sur 4000
-    host: "0.0.0.0", // Écouter sur toutes les interfaces
   },
 });
