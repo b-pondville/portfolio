@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="18" viewBox="0 0 29 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="29" height="18" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="icon-menu" clip-path="url(#clip-path)">
+    <g transform="translate(-420 -239)">
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="7" height="7" rx="1" transform="translate(420 239)" fill="#eee"/>
+    </g>
+    <g transform="translate(-409 -239)">
+      <rect id="Rectangle_3-2" data-name="Rectangle 3" width="7" height="7" rx="1" transform="translate(420 239)" fill="#eee"/>
+    </g>
+    <g transform="translate(-398 -239)">
+      <rect id="Rectangle_3-3" data-name="Rectangle 3" width="7" height="7" rx="1" transform="translate(420 239)" fill="#eee"/>
+    </g>
+    <g transform="translate(-420 -228)">
+      <rect id="Rectangle_3-4" data-name="Rectangle 3" width="7" height="7" rx="1" transform="translate(420 239)" fill="#eee"/>
+    </g>
+    <g transform="translate(-409 -228)">
+      <rect id="Rectangle_3-5" data-name="Rectangle 3" width="7" height="7" rx="1" transform="translate(420 239)" fill="#eee"/>
+    </g>
+    <g transform="translate(-398 -228)">
+      <rect id="Rectangle_3-6" data-name="Rectangle 3" width="7" height="7" rx="1" transform="translate(420 239)" fill="#eee"/>
+    </g>
+  </g>
+</svg>
