@@ -372,6 +372,11 @@ onMounted(() => {
       border-radius: 25px;
       padding: 0.5rem;
 
+      @include breakpoint(mobile) {
+        padding: 1.5rem 0.5rem;
+        gap: 2rem 1rem;
+      }
+
       &.front {
         grid-column: 1 / 4;
         grid-row: 1 / 4;
@@ -501,10 +506,11 @@ onMounted(() => {
         gap: 1rem;
 
         @include breakpoint(mobile) {
-          padding: 0.5rem;
+          padding: 0;
 
           img {
             max-width: 50px;
+            max-height: 50px;
           }
         }
       }
