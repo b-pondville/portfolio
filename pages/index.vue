@@ -18,7 +18,7 @@ const indexIsPair = (index) => index % 2 !== 0;
 
 //Animation
 const animDelay = 200;
-const animDuration = 500;
+const animDuration = 300;
 
 const pageBottomReached = ref(false);
 
@@ -44,7 +44,7 @@ onMounted(() => {
 <template>
   <main>
     <section id="hero">
-      <h1 v-motion-slide-visible-bottom>
+      <h1 v-motion-slide-visible-once-bottom>
         {{ name }}<strong>{{ surname }}</strong>
       </h1>
     </section>
@@ -312,7 +312,7 @@ onMounted(() => {
 
     .left {
       transform: translateX(-100%);
-      padding-right: 25px;
+      padding: 0 25px;
       width: fit-content;
       text-align: right;
 
@@ -324,7 +324,7 @@ onMounted(() => {
     }
 
     .right {
-      padding-left: 25px;
+      padding: 0 25px;
       width: fit-content;
     }
   }
