@@ -25,8 +25,8 @@ const copyToClipboard = () => {
 
 function startShare() {
   share({
-    title: "Look at this awesome website!",
-    text: "It is so cool!",
+    title: "Check out this profile!",
+    text: "I think you might be interested in Benjamin's skills.",
     url: currentUrl,
   });
 }
