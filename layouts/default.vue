@@ -74,17 +74,22 @@ const downloadPdf = () => {
 // Fonction pour que si l'utilisateur est bientôt en bas de page scroll jusqu'au bas de page
 if (import.meta.env.SSR === false) {
   let lastScrollPosition = 0;
-  window.addEventListener("scroll", () => {
-    const currentScrollPosition = window.scrollY;
-    if (
-      currentScrollPosition > lastScrollPosition && // Only trigger if scrolling down
-      window.innerHeight + window.scrollY >= document.body.offsetHeight - 200
-    ) {
-      scrollToBottom();
-    }
-    lastScrollPosition = currentScrollPosition;
-  });
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+
+  if (!isMobile) {
+    window.addEventListener("scroll", () => {
+      const currentScrollPosition = window.scrollY;
+      if (
+        currentScrollPosition > lastScrollPosition && // Only trigger if scrolling down
+        window.innerHeight + window.scrollY >= document.body.offsetHeight - 200
+      ) {
+        scrollToBottom();
+      }
+      lastScrollPosition = currentScrollPosition;
+    });
+  }
 }
+
 const scrollToBottom = () => {
   window.scrollTo({
     top: document.body.offsetHeight,
