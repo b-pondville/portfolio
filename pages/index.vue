@@ -242,7 +242,6 @@ onMounted(() => {
 
 #about {
   height: 100vh;
-  overflow-y: scroll;
 
   @include breakpoint(tablet) {
     height: auto;
