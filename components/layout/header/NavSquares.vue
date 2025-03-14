@@ -44,16 +44,11 @@ const returnStyleFromIndex = (index) => {
   };
 };
 
-const isHovered = ref(false);
+let isHovered = ref(false);
 </script>
 
 <template>
-  <div
-    id="scroll-squares"
-    @mouseenter.prevent="isHovered = true"
-    @mouseleave.prevent="isHovered = false"
-    @click.stop
-  >
+  <div id="scroll-squares" @click.stop @mouseenter.prevent="isHovered = true">
     <button
       v-for="(link, index) in navLinks"
       :key="index"
@@ -65,28 +60,37 @@ const isHovered = ref(false);
     >
       <span class="square" :style="returnStyleFromIndex(index)"></span>
       <label
+        @mouseenter.prevent="isHovered = true"
         v-motion
-        :initial="{ opacity: 0, transform: 'translate(-20px, -50%)' }"
-        :visible="{ opacity: 1, transform: 'translate(0px, -50%' }"
+        :initial="{ opacity: 0, transform: 'translate(-20px, -48%)' }"
+        :visible="{ opacity: 1, transform: 'translate(0px, -48%' }"
         v-show="isHovered"
         :for="index"
         >{{ link.name }}</label
       >
     </button>
   </div>
-  <div v-motion-fade-visible v-show="isHovered" id="layer"></div>
+  <div
+    @mouseenter.prevent="isHovered = true"
+    @mouseleave.prevent="isHovered = false"
+    :class="{ visible: isHovered }"
+    id="layer"
+  ></div>
 </template>
 
 <style lang="scss" scoped>
 #scroll-squares {
-  z-index: 1000;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   position: absolute;
   top: 50%;
-  left: 0.8rem;
+  left: 0;
+  padding-left: 0.8rem;
   transform: translateY(-50%);
+  height: 85%;
+  justify-content: center;
 
   .scroll-square {
     position: relative;
@@ -119,7 +123,7 @@ const isHovered = ref(false);
       position: absolute;
       top: 50%;
       left: 100%;
-      transform: translateY(-50%);
+      transform: translateY(-48%);
       padding: 1.8rem 0;
       color: white;
       border-radius: 0.5rem;
@@ -138,12 +142,16 @@ const isHovered = ref(false);
 }
 
 #layer {
+  opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 10vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+
+  &.visible {
+    opacity: 1;
+  }
 }
 </style>

@@ -49,14 +49,19 @@ const props = defineProps({
   font-family: $body-font;
   border: 2px solid $bkg-color;
   text-wrap: nowrap;
-
-  &:hover {
-    filter: brightness(1.1);
-  }
+  font-weight: 500;
 
   &.primary {
     background-color: $primary-color;
     color: white;
+
+    &:hover {
+      img {
+        filter: invert(1);
+      }
+
+      color: black;
+    }
   }
 
   img {

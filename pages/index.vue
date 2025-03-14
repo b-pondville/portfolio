@@ -47,6 +47,9 @@ onMounted(() => {
       <h1 v-motion-slide-visible-once-bottom>
         {{ name }}<strong>{{ surname }}</strong>
       </h1>
+      <p class="title" v-motion-slide-visible-once-bottom>
+        Web & SaaS Developer - Freelancer
+      </p>
     </section>
 
     <section id="about">
@@ -74,7 +77,7 @@ onMounted(() => {
 
     <section id="education">
       <div class="content">
-        <h2 class="left">Education</h2>
+        <h2>Education</h2>
         <div
           v-for="(school, index) in education"
           :class="[indexIsPair(index) ? 'left' : 'right']"
@@ -98,7 +101,7 @@ onMounted(() => {
 
     <section id="experience">
       <div class="content">
-        <h2 class="left">Experience</h2>
+        <h2>Experience</h2>
         <div
           v-for="(job, index) in experience"
           :class="[indexIsPair(index) ? 'left' : 'right']"
@@ -156,7 +159,7 @@ onMounted(() => {
     </section>
 
     <section id="thankyou">
-      <h2 v-motion-slide-visible-bottom>Thank you for your time!</h2>
+      <h2 v-motion-slide-visible-once-bottom>Thank you for your time!</h2>
       <div
         class="talk"
         v-show="pageBottomReached"
@@ -202,7 +205,7 @@ onMounted(() => {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  gap: 1rem;
+  gap: 0.5rem;
   background-color: $bkg-color;
 
   h1 {
@@ -212,12 +215,20 @@ onMounted(() => {
     align-items: center;
     flex-wrap: wrap;
   }
+
+  .title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-weight: lighter;
+    text-align: center;
+  }
 }
 
 #vertical-line {
   position: fixed;
   top: 0;
-  left: 60%;
+  left: 50%;
   width: 2px;
   height: 100%;
   background-color: $primary-color;
@@ -250,12 +261,10 @@ onMounted(() => {
   .highlight {
     position: relative;
     top: 0;
-    left: 60%;
+    left: 50%;
     max-width: calc(30% - 6rem);
     height: calc(100% - 6rem);
     padding: 3rem;
-    background-color: $primary-color;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -280,13 +289,13 @@ onMounted(() => {
   height: auto;
 
   .content {
-    left: 60%;
+    left: 50%;
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     overflow: visible;
-    width: 40%;
+    width: 50%;
 
     @include breakpoint(tablet) {
       left: 50%;
@@ -354,7 +363,7 @@ onMounted(() => {
     display: grid;
     grid-template: auto / repeat(6, 1fr);
     gap: 1rem;
-    padding: 2rem 5rem 5rem 5rem;
+    padding: 2rem 5rem 0rem 5rem;
 
     @include breakpoint(tablet) {
       grid-template: auto / repeat(3, 1fr);

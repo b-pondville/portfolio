@@ -70,6 +70,28 @@ const toggleShareOptions = () => {
 const downloadPdf = () => {
   window.open("/cv.pdf", "_blank");
 };
+
+// Fonction pour que si l'utilisateur est bientôt en bas de page scroll jusqu'au bas de page
+if (import.meta.env.SSR === false) {
+  let lastScrollPosition = 0;
+  window.addEventListener("scroll", () => {
+    const currentScrollPosition = window.scrollY;
+    if (
+      currentScrollPosition > lastScrollPosition && // Only trigger if scrolling down
+      window.innerHeight + window.scrollY >= document.body.offsetHeight - 200
+    ) {
+      scrollToBottom();
+    }
+    lastScrollPosition = currentScrollPosition;
+  });
+}
+const scrollToBottom = () => {
+  window.scrollTo({
+    top: document.body.offsetHeight,
+    left: 0,
+    behavior: "smooth",
+  });
+};
 </script>
 
 <template>
@@ -174,6 +196,7 @@ const downloadPdf = () => {
   }
 }
 
+// Expand button styles
 button {
   background-color: transparent;
   border: none;
@@ -183,6 +206,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 
   img {
     width: 100%;
