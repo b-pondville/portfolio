@@ -39,6 +39,33 @@
   ],
   "experience": [
     {
+      "position": "Web & SaaS Developer",
+      "company": "Freelance",
+      "employment_type": "Self-employed",
+      "dates": {
+        "start": "2024",
+        "end": "Present"
+      },
+      "responsibilities": [
+        "Design, development, and deployment of web and SaaS solutions",
+        "Creation of optimized websites (performance, SEO, accessibility)",
+        "Development of custom components and features",
+        "Continuous optimization: UX/UI improvements, bug fixes, technical enhancements",
+        "Automation of workflows and third-party tool integrations"
+      ],
+      "technologies": [
+        "Vue.js",
+        "Nuxt.js",
+        "JavaScript (ES6+)",
+        "HTML5",
+        "CSS3",
+        "Sass",
+        "TailwindCSS",
+        "WordPress",
+        "Figma"
+      ]
+    },
+    {
       "position": "Webmaster",
       "company": "IÉSEG School Of Management",
       "employment_type": "Permanent",
