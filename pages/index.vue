@@ -53,6 +53,7 @@ onMounted(() => {
     </section>
 
     <section id="about">
+      <img src="~/public/pp.jpg" alt="" />
       <div class="highlight">
         <h2>Shortcut</h2>
         <p>
@@ -223,6 +224,10 @@ onMounted(() => {
     font-weight: lighter;
     text-align: center;
   }
+
+  @include breakpoint(mobile) {
+    height: 50vh;
+  }
 }
 
 #vertical-line {
@@ -253,15 +258,36 @@ onMounted(() => {
 
 #about {
   height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  img {
+    max-width: 100%;
+  }
 
   @include breakpoint(tablet) {
     height: auto;
+    flex-direction: column;
+
+    img {
+      max-width: 50%;
+      height: auto;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    img {
+      max-width: 80%;
+      height: auto;
+    }
   }
 
   .highlight {
     position: relative;
     top: 0;
-    left: 50%;
     max-width: calc(30% - 6rem);
     height: calc(100% - 6rem);
     padding: 3rem;
