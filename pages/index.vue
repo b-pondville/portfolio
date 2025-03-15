@@ -54,7 +54,7 @@ onMounted(() => {
 
     <section id="about">
       <img src="~/public/pp.jpg" alt="" />
-      <div class="highlight">
+      <div class="highlight" v-motion-slide-visible-once-right>
         <h2>Shortcut</h2>
         <p>
           Hi, I'm Benjamin, a front-end developer specializing in Vue.js and
@@ -225,7 +225,7 @@ onMounted(() => {
     text-align: center;
   }
 
-  @include breakpoint(mobile) {
+  @include breakpoint(tablet) {
     height: 50vh;
   }
 }
@@ -258,23 +258,30 @@ onMounted(() => {
 
 #about {
   height: 100vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
   align-items: center;
-  gap: 2rem;
+  gap: 100px;
 
   img {
     max-width: 100%;
+    justify-self: end;
+  }
+
+  @media screen and (max-width: 1024px) and (orientation: portrait) {
+    height: auto;
   }
 
   @include breakpoint(tablet) {
     height: auto;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    background-color: $bkg-color;
 
     img {
       max-width: 50%;
       height: auto;
+      justify-self: center;
     }
   }
 
@@ -286,14 +293,11 @@ onMounted(() => {
   }
 
   .highlight {
-    position: relative;
-    top: 0;
-    max-width: calc(30% - 6rem);
-    height: calc(100% - 6rem);
-    padding: 3rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 400px;
+    justify-self: start;
 
     p + p {
       margin-top: 1.5rem;
@@ -303,7 +307,7 @@ onMounted(() => {
       left: 0;
       max-width: 100%;
       height: auto;
-      padding: 3rem 5rem;
+      padding: 25px;
     }
   }
 }

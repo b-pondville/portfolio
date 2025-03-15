@@ -37,6 +37,7 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .btn {
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,11 +57,7 @@ const props = defineProps({
     color: white;
 
     &:hover {
-      img {
-        filter: invert(1);
-      }
-
-      color: black;
+      background-color: #d58700;
     }
   }
 

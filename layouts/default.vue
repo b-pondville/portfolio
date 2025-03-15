@@ -125,12 +125,12 @@ const scrollToBottom = () => {
       <NuxtImg src="icons/icon-export.svg" />
     </button>
     <div v-show="showShareOptions" class="share-options">
-      <BtnButtonRed
+      <!-- <BtnButtonRed
         v-motion-slide-visible-left
         :btnPicto="'/icons/icon-download.svg'"
         :btnText="'Download'"
         @click.prevent="downloadPdf"
-      />
+      /> -->
 
       <BtnButtonRed
         v-motion-slide-visible-left
@@ -161,7 +161,7 @@ const scrollToBottom = () => {
   top: 0;
   left: 0;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   z-index: 100;
 }
 

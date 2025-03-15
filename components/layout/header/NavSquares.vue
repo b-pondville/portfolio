@@ -70,11 +70,12 @@ let isHovered = ref(false);
       >
     </button>
   </div>
+  <div v-show="isHovered" id="layer"></div>
   <div
+    id="layer-trigger"
     @mouseenter.prevent="isHovered = true"
     @mouseleave.prevent="isHovered = false"
-    :class="{ visible: isHovered }"
-    id="layer"
+    @click.prevent
   ></div>
 </template>
 
@@ -141,17 +142,31 @@ let isHovered = ref(false);
   }
 }
 
+#layer-trigger {
+  position: fixed;
+  bottom: 75px;
+  left: 0;
+  width: 200px;
+  height: 100vh;
+}
+
 #layer {
   opacity: 0;
   position: fixed;
   top: 0;
   left: 0;
-  width: 10vw;
+  width: 200px;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.5);
 
-  &.visible {
-    opacity: 1;
+  animation: 0.3s forwards alternate fadeIn;
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }
 </style>
