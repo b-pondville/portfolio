@@ -231,6 +231,7 @@ const scrollToBottom = () => {
   flex-direction: column;
   gap: 0.5rem;
   z-index: 1;
+  font-size: 1.2rem;
   color: white;
 }
 
