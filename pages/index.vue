@@ -1,18 +1,10 @@
 <script setup>
-definePageMeta({
-  innerNavLinks: [
-    { name: "Hello", href: "#hero", active: ref(true) },
-    { name: "About me", href: "#about", active: ref(false) },
-    { name: "Education", href: "#education", active: ref(false) },
-    { name: "Experience", href: "#experience", active: ref(false) },
-    { name: "Skills", href: "#skills", active: ref(false) },
-    { name: "Thank you", href: "#thankyou", active: ref(false) },
-  ],
-});
+const lang = inject("lang");
 
 import cvData from "~/public/data/cvData.json";
 
-const { name, surname, education, experience, skills } = cvData;
+// Sélection des données réactives
+const currentCvData = computed(() => cvData[lang.value] || cvData.en);
 
 const indexIsPair = (index) => index % 2 !== 0;
 
@@ -45,34 +37,21 @@ onMounted(() => {
   <main>
     <section id="hero">
       <h1 v-motion-slide-visible-once-bottom>
-        {{ name }}<strong>{{ surname }}</strong>
+        {{ currentCvData.name }}<strong>{{ currentCvData.surname }}</strong>
+        {{ test }}
       </h1>
       <p class="title" v-motion-slide-visible-once-bottom>
-        Web & SaaS Developer - Freelancer
+        {{ currentCvData.title }}
       </p>
     </section>
 
     <section id="about">
       <img src="~/public/pp.jpg" alt="" />
       <div class="highlight" v-motion-slide-visible-once-right>
-        <h2>Shortcut</h2>
-        <p>
-          Hi, I'm Benjamin, a front-end developer specializing in Vue.js and
-          Nuxt.js. Passionate about clean, maintainable code and intuitive user
-          experiences, I focus on building high-performance web applications
-          that seamlessly blend functionality and aesthetics.
-        </p>
-        <p>
-          With a keen eye for detail and a strong problem-solving mindset, I
-          thrive on crafting engaging interfaces, optimizing performance, and
-          ensuring smooth user interactions. Beyond coding, I stay up to date
-          with the latest web technologies to continuously refine my skills and
-          deliver modern, efficient solutions.
-        </p>
-        <p>
-          If you're looking for a dedicated front-end developer to enhance your
-          team or project, let's connect!
-        </p>
+        <h2>
+          {{ lang === "fr" ? "À propos de moi" : "About me" }}
+        </h2>
+        <p v-for="p in currentCvData.bio">{{ p }}</p>
       </div>
     </section>
 
@@ -80,7 +59,7 @@ onMounted(() => {
       <div class="content">
         <h2>Education</h2>
         <div
-          v-for="(school, index) in education"
+          v-for="(school, index) in currentCvData.education"
           :class="[indexIsPair(index) ? 'left' : 'right']"
           v-motion
           :initial="{
@@ -104,7 +83,7 @@ onMounted(() => {
       <div class="content">
         <h2>Experience</h2>
         <div
-          v-for="(job, index) in experience"
+          v-for="(job, index) in currentCvData.experience"
           :class="[indexIsPair(index) ? 'left' : 'right']"
           v-motion
           :initial="{
@@ -137,10 +116,10 @@ onMounted(() => {
     </section>
 
     <section id="skills">
-      <h2 class="left">What for?</h2>
+      <h2 class="left">{{ lang === "fr" ? "Compétences" : "Skills" }}</h2>
       <div class="content">
         <section
-          v-for="(block, key, index) in skills"
+          v-for="(block, key, index) in currentCvData.skills"
           :class="key"
           v-motion-slide-visible-once-bottom
           :delay="animDelay"
@@ -160,7 +139,11 @@ onMounted(() => {
     </section>
 
     <section id="thankyou">
-      <h2 v-motion-slide-visible-once-bottom>Thank you for your time!</h2>
+      <h2 v-motion-slide-visible-once-bottom>
+        {{
+          lang === "fr" ? "Merci pour votre temps" : "Thank you for your time!"
+        }}
+      </h2>
       <div
         class="talk"
         v-show="pageBottomReached"
@@ -168,7 +151,9 @@ onMounted(() => {
         :delay="animDelay"
         :duration="animDuration"
       >
-        <p>Any question?</p>
+        <p>
+          {{ lang === "fr" ? "Une question ?" : "Any question?" }}
+        </p>
         <NuxtImg
           class="arrow"
           src="/icons/icon-arrow.svg"
@@ -192,7 +177,9 @@ onMounted(() => {
           width="100"
           height="100"
         />
-        <p>Passing this CV along!</p>
+        <p>
+          {{ lang === "fr" ? "Je partage ce CV !" : "Passing this CV along!" }}
+        </p>
       </div>
     </section>
     <div id="vertical-line"></div>

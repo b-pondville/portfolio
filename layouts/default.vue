@@ -1,10 +1,24 @@
 <script setup>
 //IMPORTS
+
+// Fonction pour basculer la langue
+const lang = ref("fr");
+
+provide("lang", lang);
+const toggleLang = () => {
+  const currentLang = lang.value;
+  const newLang = currentLang === "fr" ? "en" : "fr";
+  lang.value = newLang;
+};
+
 const { share, isSupported: isShareSupported } = useShare();
 
 import cvData from "~/public/data/cvData.json";
 
-const { contact } = cvData;
+// Sélection des données réactives
+const currentCvData = computed(() => cvData[lang.value] || cvData.en);
+
+const { contact } = cvData.en;
 
 //Sharing setup
 const url = useRequestURL(); //get url
@@ -13,13 +27,15 @@ const { copy, isSupported: isClipboardSupported } = useClipboard({
   currentUrl,
 });
 
-let copyTxt = ref("Copy link"); //declare the copy text in the button
+const copyTxt = computed(() =>
+  lang.value === "en" ? "Copy link" : "Copier le lien"
+);
 
 const copyToClipboard = () => {
   copy(currentUrl); //copy to clipboard
-  copyTxt.value = "Copied!";
+  copyTxt.value = lang === "en" ? "Link copied!" : "Lien copié!"; //change the text in the button
   setTimeout(() => {
-    copyTxt.value = "Copy link";
+    copyTxt.value = lang === "en" ? "Copy link" : "Copier le lien";
   }, 2000);
 };
 
@@ -109,14 +125,14 @@ const scrollToBottom = () => {
         v-motion-slide-visible-right
         :btnLink="'tel:' + contact.phone"
         :btnPicto="'/icons/icon-call.svg'"
-        :btnText="'Call me'"
+        :btnText="lang === 'en' ? 'Call me' : 'Appelez-moi'"
         :reversePicto="true"
       />
       <BtnButtonRed
         v-motion-slide-visible-right
         :btnLink="'mailto:' + contact.email"
         :btnPicto="'/icons/icon-mail.svg'"
-        :btnText="'Email me'"
+        :btnText="lang === 'en' ? 'Email me' : 'Email'"
         :reversePicto="true"
       />
     </div>
@@ -145,9 +161,15 @@ const scrollToBottom = () => {
         v-if="isShareSupported"
         @click.prevent="startShare"
         :btnPicto="'/icons/icon-export.svg'"
-        :btnText="'Share'"
+        :btnText="lang === 'en' ? 'Share' : 'Partager'"
       />
     </div>
+
+    <button id="btn-lang" @click="toggleLang">
+      <p>
+        {{ lang === "fr" ? "EN" : "FR" }}
+      </p>
+    </button>
 
     <LayoutHeaderNavSquares />
   </div>
@@ -199,6 +221,17 @@ const scrollToBottom = () => {
     gap: 0.5rem;
     flex-wrap: wrap;
   }
+}
+
+#btn-lang {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: 1;
+  color: white;
 }
 
 // Expand button styles

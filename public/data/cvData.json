@@ -1,433 +1,881 @@
 {
-  "name": "Benjamin",
-  "surname": "Pondville",
-  "title": "Web & SaaS Developer - Freelance",
-  "contact": {
-    "email": "benjaminpondville@gmail.com",
-    "phone": "+33780006620",
-    "linkedin": "https://www.linkedin.com/in/benjamin-pondville-45507314b/"
-  },
-  "education": [
-    {
-      "program": "Web Developer",
-      "institution": "Self-Taught",
-      "start": "2020",
-      "end": "Lifelong Learning",
-      "degree": "Experience and Practice"
+  "en": {
+    "name": "Benjamin",
+    "surname": "Pondville",
+    "title": "Web & SaaS Developer - Freelance",
+    "contact": {
+      "email": "benjaminpondville@gmail.com",
+      "phone": "+33780006620",
+      "linkedin": "https://www.linkedin.com/in/benjamin-pondville-45507314b/"
     },
-    {
-      "program": "Frontend Developer",
-      "institution": "OpenClassrooms",
-      "start": "2018",
-      "end": "2020",
-      "degree": "RNCP Level 6 Diploma (Bac+4)"
-    },
-    {
-      "program": "Web and Digital Production Manager",
-      "institution": "Efficom",
-      "start": "2016",
-      "end": "2018",
-      "degree": "RNCP Level 5 Diploma (Bac+2)"
-    },
-    {
-      "program": "Graphic Industry",
-      "institution": "Saint-Luc Tournai",
-      "start": "2011",
-      "end": "2016",
-      "degree": "CESS (Belgian BAC) + PAO Operator Diploma"
-    }
-  ],
-  "experience": [
-    {
-      "position": "Web & SaaS Developer",
-      "company": "Freelance",
-      "employment_type": "Self-employed",
-      "dates": {
-        "start": "2024",
-        "end": "Present"
-      },
-      "responsibilities": [
-        "Design, development, and deployment of web and SaaS solutions",
-        "Creation of optimized websites (performance, SEO, accessibility)",
-        "Development of custom components and features",
-        "Continuous optimization: UX/UI improvements, bug fixes, technical enhancements",
-        "Automation of workflows and third-party tool integrations"
-      ],
-      "technologies": [
-        "Vue.js",
-        "Nuxt.js",
-        "JavaScript (ES6+)",
-        "HTML5",
-        "CSS3",
-        "Sass",
-        "TailwindCSS",
-        "WordPress",
-        "Figma"
-      ]
-    },
-    {
-      "position": "Webmaster",
-      "company": "IÉSEG School Of Management",
-      "employment_type": "Permanent",
-      "dates": {
-        "start": "2021",
-        "end": "2024"
-      },
-      "responsibilities": [
-        "Managed all frontend aspects for main and satellite sites",
-        "Designed, developed, and deployed custom pages and components (Gutenberg blocks)",
-        "Focused on continuous improvement: design updates, bug fixes, and optimizations"
-      ],
-      "technologies": [
-        "WordPress",
-        "ACF",
-        "HTML5",
-        "CSS3",
-        "Sass",
-        "Bootstrap",
-        "JavaScript (ES6)",
-        "jQuery",
-        "PHP",
-        "Sarbacane",
-        "Zapier",
-        "Adobe XD",
-        "Figma"
-      ]
-    },
-    {
-      "position": "Frontend Developer / UX-UI Web Designer",
-      "company": "Plop Consulting",
-      "employment_type": "Freelance",
-      "dates": {
-        "start": "2021",
-        "end": "2021"
-      },
-      "responsibilities": [
-        "UX/UI Web Design and integration",
-        "Development of visual identity and optimizations"
-      ],
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "JavaScript (ES6)",
-        "JSON",
-        "Git",
-        "Adobe XD",
-        "Illustrator",
-        "Photoshop"
-      ]
-    },
-    {
-      "position": "Frontend Developer / UX-UI Web Designer",
-      "company": "Projet45",
-      "employment_type": "Freelance",
-      "dates": {
+    "bio": [
+      "Hi, I'm Benjamin, a front-end developer specializing in Vue.js and Nuxt.js. Passionate about clean, maintainable code and intuitive user experiences, I focus on building high-performance web applications that seamlessly blend functionality and aesthetics.",
+      "With a keen eye for detail and a strong problem-solving mindset, I thrive on crafting engaging interfaces, optimizing performance, and ensuring smooth user interactions. Beyond coding, I stay up to date with the latest web technologies to continuously refine my skills and deliver modern, efficient solutions.",
+      "If you're looking for a dedicated front-end developer to enhance your team or project, let's connect!"
+    ],
+    "education": [
+      {
+        "program": "Web Developer",
+        "institution": "Self-Taught",
         "start": "2020",
-        "end": "2020"
+        "end": "Lifelong Learning",
+        "degree": "Experience and Practice"
       },
-      "responsibilities": [
-        "UX/UI Web Design",
-        "Responsive integration",
-        "Optimizations",
-        "Development of global visual identity"
-      ],
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "JavaScript (ES6)",
-        "JSON",
-        "Git",
-        "Adobe XD",
-        "Illustrator",
-        "Photoshop"
-      ]
-    },
-    {
-      "position": "Frontend Developer / UX-UI Web Designer",
-      "company": "Manekinecoon",
-      "employment_type": "Freelance",
-      "dates": {
-        "start": "2020",
-        "end": "2020"
+      {
+        "program": "Frontend Developer",
+        "institution": "OpenClassrooms",
+        "start": "2018",
+        "end": "2020",
+        "degree": "RNCP Level 6 Diploma (Bac+4)"
       },
-      "responsibilities": [
-        "Created an administrable site from scratch",
-        "UX/UI Web Design",
-        "Web development",
-        "Global visual identity"
-      ],
-      "technologies": ["HTML5", "CSS3", "JavaScript (ES6)", "PHP", "MySQL"]
-    },
-    {
-      "position": "Frontend Developer",
-      "company": "Forestia",
-      "employment_type": "Personal Project",
-      "dates": {
-        "start": "2019",
-        "end": "2019"
-      },
-      "responsibilities": [
-        "Game Design",
-        "Equipment, movement, and combat system",
-        "Scalable, configurable application"
-      ],
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "JavaScript ES6",
-        "OOP",
-        "Git",
-        "Adobe XD",
-        "Illustrator"
-      ]
-    },
-    {
-      "position": "Frontend Developer",
-      "company": "We Eat",
-      "employment_type": "Personal Project",
-      "dates": {
-        "start": "2019",
-        "end": "2019"
-      },
-      "responsibilities": [
-        "UX/UI Web Design",
-        "Web integration",
-        "Integration of Google Maps + StreetView API",
-        "Restaurant addition and rating module"
-      ],
-      "technologies": [
-        "HTML5",
-        "CSS3",
-        "JavaScript ES6",
-        "Google Maps API",
-        "Google StreetView API",
-        "JSON",
-        "Git",
-        "Adobe XD"
-      ]
-    },
-    {
-      "position": "Web & Print Creation Assistant",
-      "company": "L'AGENT X",
-      "employment_type": "Apprenticeship",
-      "dates": {
+      {
+        "program": "Web and Digital Production Manager",
+        "institution": "Efficom",
         "start": "2016",
-        "end": "2018"
+        "end": "2018",
+        "degree": "RNCP Level 5 Diploma (Bac+2)"
       },
-      "responsibilities": ["UI Web Design", "Desktop Publishing (DTP)"],
-      "technologies": [
-        "Sketch",
-        "Adobe XD",
-        "InDesign",
-        "Illustrator",
-        "Photoshop"
+      {
+        "program": "Graphic Industry",
+        "institution": "Saint-Luc Tournai",
+        "start": "2011",
+        "end": "2016",
+        "degree": "CESS (Belgian BAC) + PAO Operator Diploma"
+      }
+    ],
+    "experience": [
+      {
+        "position": "Web & SaaS Developer",
+        "company": "Freelance",
+        "employment_type": "Self-employed",
+        "dates": {
+          "start": "2024",
+          "end": "Present"
+        },
+        "responsibilities": [
+          "Design, development, and deployment of web and SaaS solutions",
+          "Creation of optimized websites (performance, SEO, accessibility)",
+          "Development of custom components and features",
+          "Continuous optimization: UX/UI improvements, bug fixes, technical enhancements",
+          "Automation of workflows and third-party tool integrations"
+        ],
+        "technologies": [
+          "Vue.js",
+          "Nuxt.js",
+          "JavaScript (ES6+)",
+          "HTML5",
+          "CSS3",
+          "Sass",
+          "TailwindCSS",
+          "WordPress",
+          "Figma"
+        ]
+      },
+      {
+        "position": "Webmaster",
+        "company": "IÉSEG School Of Management",
+        "employment_type": "Permanent",
+        "dates": {
+          "start": "2021",
+          "end": "2024"
+        },
+        "responsibilities": [
+          "Managed all frontend aspects for main and satellite sites",
+          "Designed, developed, and deployed custom pages and components (Gutenberg blocks)",
+          "Focused on continuous improvement: design updates, bug fixes, and optimizations"
+        ],
+        "technologies": [
+          "WordPress",
+          "ACF",
+          "HTML5",
+          "CSS3",
+          "Sass",
+          "Bootstrap",
+          "JavaScript (ES6)",
+          "jQuery",
+          "PHP",
+          "Sarbacane",
+          "Zapier",
+          "Adobe XD",
+          "Figma"
+        ]
+      },
+      {
+        "position": "Frontend Developer / UX-UI Web Designer",
+        "company": "Plop Consulting",
+        "employment_type": "Freelance",
+        "dates": {
+          "start": "2021",
+          "end": "2021"
+        },
+        "responsibilities": [
+          "UX/UI Web Design and integration",
+          "Development of visual identity and optimizations"
+        ],
+        "technologies": [
+          "HTML5",
+          "CSS3",
+          "JavaScript (ES6)",
+          "JSON",
+          "Git",
+          "Adobe XD",
+          "Illustrator",
+          "Photoshop"
+        ]
+      },
+      {
+        "position": "Frontend Developer / UX-UI Web Designer",
+        "company": "Projet45",
+        "employment_type": "Freelance",
+        "dates": {
+          "start": "2020",
+          "end": "2020"
+        },
+        "responsibilities": [
+          "UX/UI Web Design",
+          "Responsive integration",
+          "Optimizations",
+          "Development of global visual identity"
+        ],
+        "technologies": [
+          "HTML5",
+          "CSS3",
+          "JavaScript (ES6)",
+          "JSON",
+          "Git",
+          "Adobe XD",
+          "Illustrator",
+          "Photoshop"
+        ]
+      },
+      {
+        "position": "Frontend Developer / UX-UI Web Designer",
+        "company": "Manekinecoon",
+        "employment_type": "Freelance",
+        "dates": {
+          "start": "2020",
+          "end": "2020"
+        },
+        "responsibilities": [
+          "Created an administrable site from scratch",
+          "UX/UI Web Design",
+          "Web development",
+          "Global visual identity"
+        ],
+        "technologies": ["HTML5", "CSS3", "JavaScript (ES6)", "PHP", "MySQL"]
+      },
+      {
+        "position": "Frontend Developer",
+        "company": "Forestia",
+        "employment_type": "Personal Project",
+        "dates": {
+          "start": "2019",
+          "end": "2019"
+        },
+        "responsibilities": [
+          "Game Design",
+          "Equipment, movement, and combat system",
+          "Scalable, configurable application"
+        ],
+        "technologies": [
+          "HTML5",
+          "CSS3",
+          "JavaScript ES6",
+          "OOP",
+          "Git",
+          "Adobe XD",
+          "Illustrator"
+        ]
+      },
+      {
+        "position": "Frontend Developer",
+        "company": "We Eat",
+        "employment_type": "Personal Project",
+        "dates": {
+          "start": "2019",
+          "end": "2019"
+        },
+        "responsibilities": [
+          "UX/UI Web Design",
+          "Web integration",
+          "Integration of Google Maps + StreetView API",
+          "Restaurant addition and rating module"
+        ],
+        "technologies": [
+          "HTML5",
+          "CSS3",
+          "JavaScript ES6",
+          "Google Maps API",
+          "Google StreetView API",
+          "JSON",
+          "Git",
+          "Adobe XD"
+        ]
+      },
+      {
+        "position": "Web & Print Creation Assistant",
+        "company": "L'AGENT X",
+        "employment_type": "Apprenticeship",
+        "dates": {
+          "start": "2016",
+          "end": "2018"
+        },
+        "responsibilities": ["UI Web Design", "Desktop Publishing (DTP)"],
+        "technologies": [
+          "Sketch",
+          "Adobe XD",
+          "InDesign",
+          "Illustrator",
+          "Photoshop"
+        ]
+      }
+    ],
+    "skills": {
+      "front": [
+        {
+          "title": "HTML5",
+          "level": 5,
+          "image": "icons/icon-html.svg"
+        },
+        {
+          "title": "CSS3",
+          "level": 5,
+          "image": "icons/icon-css.svg"
+        },
+        {
+          "title": "JS ES6",
+          "level": 5,
+          "image": "icons/icon-js.svg"
+        },
+        {
+          "title": "Vue.js",
+          "level": 5,
+          "image": "icons/icon-vuejs.svg"
+        },
+        {
+          "title": "Nuxt.js",
+          "level": 5,
+          "image": "icons/icon-nuxt.svg"
+        },
+        {
+          "title": "Sass",
+          "level": 5,
+          "image": "icons/icon-sass.svg"
+        },
+        {
+          "title": "Bootstrap",
+          "level": 5,
+          "image": "icons/icon-bootstrap.svg"
+        },
+        {
+          "title": "tailwindcss",
+          "level": 5,
+          "image": "icons/icon-tailwind.svg"
+        },
+        {
+          "title": "jQuery",
+          "level": 5,
+          "image": "icons/icon-jquery.svg"
+        }
+      ],
+      "back": [
+        {
+          "title": "PHP",
+          "level": 3,
+          "image": "icons/icon-php.svg"
+        },
+        {
+          "title": "Node.js",
+          "level": 3,
+          "image": "icons/icon-nodejs.svg"
+        }
+      ],
+      "database": [
+        {
+          "title": "MySQL",
+          "level": 3,
+          "image": "icons/icon-mysql.svg"
+        }
+      ],
+      "soft": [
+        {
+          "title": "Problem-solving",
+          "level": 5,
+          "image": "icons/icon-problem-solving.svg"
+        },
+        {
+          "title": "Stress management",
+          "level": 5,
+          "image": "icons/icon-stress.svg"
+        },
+        {
+          "title": "Organization",
+          "level": 5,
+          "image": "icons/icon-organisation.svg"
+        },
+        {
+          "title": "Optimisation",
+          "level": 5,
+          "image": "icons/icon-optimisation.svg"
+        },
+        {
+          "title": "Collaboration",
+          "level": 5,
+          "image": "icons/icon-teamwork.svg"
+        },
+        {
+          "title": "Adaptability",
+          "level": 5,
+          "image": "icons/icon-adaptability.svg"
+        }
+      ],
+      "project": [
+        {
+          "title": "Agile",
+          "level": 4,
+          "image": "icons/icon-agile.svg"
+        },
+        {
+          "title": "UML",
+          "level": 4,
+          "image": "icons/icon-uml.svg"
+        }
+      ],
+      "designtools": [
+        {
+          "title": "Figma",
+          "level": 5,
+          "image": "icons/icon-figma.svg"
+        },
+        {
+          "title": "Adobe XD",
+          "level": 4,
+          "image": "icons/icon-xd.svg"
+        },
+        {
+          "title": "Sketch",
+          "level": 4,
+          "image": "icons/icon-sketch.svg"
+        },
+        {
+          "title": "Photoshop",
+          "level": 5,
+          "image": "icons/icon-ps.svg"
+        },
+        {
+          "title": "Illustrator",
+          "level": 5,
+          "image": "icons/icon-ai.svg"
+        },
+        {
+          "title": "InDesign",
+          "level": 5,
+          "image": "icons/icon-id.svg"
+        }
+      ],
+      "versioning": [
+        {
+          "title": "Git",
+          "level": 5,
+          "image": "icons/icon-git.svg"
+        },
+        {
+          "title": "GitHub",
+          "level": 5,
+          "image": "icons/icon-github.svg"
+        },
+        {
+          "title": "Azure DevOps",
+          "level": 3,
+          "image": "icons/icon-azure.svg"
+        }
+      ],
+      "devtools": [
+        {
+          "title": "VS Code",
+          "level": 5,
+          "image": "icons/icon-vscode.svg"
+        },
+        {
+          "title": "Copilot",
+          "level": 5,
+          "image": "icons/icon-copilot.svg"
+        }
+      ],
+      "package": [
+        {
+          "title": "npm",
+          "level": 5,
+          "image": "icons/icon-npm.svg"
+        }
+      ],
+      "design": [
+        {
+          "title": "Design System",
+          "level": 5,
+          "image": "icons/icon-designsystem.svg"
+        }
+      ],
+      "app": [
+        {
+          "title": "Notion",
+          "level": 5,
+          "image": "icons/icon-notion.svg"
+        },
+        {
+          "title": "Trello",
+          "level": 5,
+          "image": "icons/icon-trello.svg"
+        }
+      ],
+      "learning": [
+        {
+          "title": "Learning",
+          "level": 5,
+          "image": "icons/icon-learning.svg"
+        }
       ]
     }
-  ],
-  "skills": {
-    "front": [
+  },
+  "fr": {
+    "name": "Benjamin",
+    "surname": "Pondville",
+    "title": "Développeur Web & SaaS - Freelance",
+    "contact": {
+      "email": "benjaminpondville@gmail.com",
+      "phone": "+33780006620",
+      "linkedin": "https://www.linkedin.com/in/benjamin-pondville-45507314b/"
+    },
+    "bio": [
+      "Bonjour, je suis Benjamin, un développeur front-end spécialisé en Vue.js et Nuxt.js. Passionné par un code propre et maintenable ainsi que par des expériences utilisateur intuitives, je me concentre sur la création d'applications web performantes alliant fonctionnalité et esthétique.",
+      "Avec un sens aigu du détail et une forte capacité à résoudre des problèmes, je m'épanouis dans la conception d'interfaces engageantes, l'optimisation des performances et l'assurance d'interactions utilisateur fluides. Au-delà du code, je me tiens à jour sur les dernières technologies web pour affiner continuellement mes compétences et fournir des solutions modernes et efficaces.",
+      "Si vous recherchez un développeur front-end dédié pour renforcer votre équipe ou projet, connectons-nous !"
+    ],
+    "education": [
       {
-        "title": "HTML5",
-        "level": 5,
-        "image": "icons/icon-html.svg"
+        "program": "Développeur Web",
+        "institution": "Autodidacte",
+        "start": "2020",
+        "end": "Apprentissage continu",
+        "degree": "Expérience et pratique"
       },
       {
-        "title": "CSS3",
-        "level": 5,
-        "image": "icons/icon-css.svg"
+        "program": "Développeur Frontend",
+        "institution": "OpenClassrooms",
+        "start": "2018",
+        "end": "2020",
+        "degree": "Diplôme RNCP Niveau 6 (Bac+4)"
       },
       {
-        "title": "JS ES6",
-        "level": 5,
-        "image": "icons/icon-js.svg"
+        "program": "Manager de Production Web et Digitale",
+        "institution": "Efficom",
+        "start": "2016",
+        "end": "2018",
+        "degree": "Diplôme RNCP Niveau 5 (Bac+2)"
       },
       {
-        "title": "Vue.js",
-        "level": 5,
-        "image": "icons/icon-vuejs.svg"
-      },
-      {
-        "title": "Nuxt.js",
-        "level": 5,
-        "image": "icons/icon-nuxt.svg"
-      },
-      {
-        "title": "Sass",
-        "level": 5,
-        "image": "icons/icon-sass.svg"
-      },
-      {
-        "title": "Bootstrap",
-        "level": 5,
-        "image": "icons/icon-bootstrap.svg"
-      },
-      {
-        "title": "tailwindcss",
-        "level": 5,
-        "image": "icons/icon-tailwind.svg"
-      },
-      {
-        "title": "jQuery",
-        "level": 5,
-        "image": "icons/icon-jquery.svg"
+        "program": "Industrie Graphique",
+        "institution": "Saint-Luc Tournai",
+        "start": "2011",
+        "end": "2016",
+        "degree": "CESS (Bac Belge) + Diplôme Opérateur PAO"
       }
     ],
-    "back": [
+    "experience": [
       {
-        "title": "PHP",
-        "level": 3,
-        "image": "icons/icon-php.svg"
+        "position": "Développeur Web & SaaS",
+        "company": "Freelance",
+        "employment_type": "Indépendant",
+        "dates": {
+          "start": "2024",
+          "end": "Présent"
+        },
+        "responsibilities": [
+          "Conception, développement et déploiement de solutions web et SaaS",
+          "Création de sites optimisés (performance, SEO, accessibilité)",
+          "Développement de composants et fonctionnalités sur mesure",
+          "Optimisation continue : améliorations UX/UI, corrections de bugs, améliorations techniques",
+          "Automatisation des workflows et intégrations d'outils tiers"
+        ],
+        "technologies": [
+          "Vue.js",
+          "Nuxt.js",
+          "JavaScript (ES6+)",
+          "HTML5",
+          "CSS3",
+          "Sass",
+          "TailwindCSS",
+          "WordPress",
+          "Figma"
+        ]
       },
       {
-        "title": "Node.js",
-        "level": 3,
-        "image": "icons/icon-nodejs.svg"
+        "position": "Webmaster",
+        "company": "IÉSEG School Of Management",
+        "employment_type": "CDI",
+        "dates": {
+          "start": "2021",
+          "end": "2024"
+        },
+        "responsibilities": [
+          "Gestion de tous les aspects frontend pour les sites principaux et satellites",
+          "Conception, développement et déploiement de pages et composants personnalisés (blocs Gutenberg)",
+          "Amélioration continue : mises à jour de design, corrections de bugs et optimisations"
+        ],
+        "technologies": [
+          "WordPress",
+          "ACF",
+          "HTML5",
+          "CSS3",
+          "Sass",
+          "Bootstrap",
+          "JavaScript (ES6)",
+          "jQuery",
+          "PHP",
+          "Sarbacane",
+          "Zapier",
+          "Adobe XD",
+          "Figma"
+        ]
+      },
+      {
+        "position": "Développeur Frontend / UX-UI Web Designer",
+        "company": "Plop Consulting",
+        "employment_type": "Freelance",
+        "dates": {
+          "start": "2021",
+          "end": "2021"
+        },
+        "responsibilities": [
+          "UX/UI Web Design et intégration",
+          "Développement de l'identité visuelle et optimisations"
+        ],
+        "technologies": [
+          "HTML5",
+          "CSS3",
+          "JavaScript (ES6)",
+          "JSON",
+          "Git",
+          "Adobe XD",
+          "Illustrator",
+          "Photoshop"
+        ]
+      },
+      {
+        "position": "Développeur Frontend / UX-UI Web Designer",
+        "company": "Projet45",
+        "employment_type": "Freelance",
+        "dates": {
+          "start": "2020",
+          "end": "2020"
+        },
+        "responsibilities": [
+          "UX/UI Web Design",
+          "Intégration responsive",
+          "Optimisations",
+          "Développement de l'identité visuelle globale"
+        ],
+        "technologies": [
+          "HTML5",
+          "CSS3",
+          "JavaScript (ES6)",
+          "JSON",
+          "Git",
+          "Adobe XD",
+          "Illustrator",
+          "Photoshop"
+        ]
+      },
+      {
+        "position": "Développeur Frontend / UX-UI Web Designer",
+        "company": "Manekinecoon",
+        "employment_type": "Freelance",
+        "dates": {
+          "start": "2020",
+          "end": "2020"
+        },
+        "responsibilities": [
+          "Création d'un site administrable de A à Z",
+          "UX/UI Web Design",
+          "Développement web",
+          "Identité visuelle globale"
+        ],
+        "technologies": ["HTML5", "CSS3", "JavaScript (ES6)", "PHP", "MySQL"]
+      },
+      {
+        "position": "Développeur Frontend",
+        "company": "Forestia",
+        "employment_type": "Projet Personnel",
+        "dates": {
+          "start": "2019",
+          "end": "2019"
+        },
+        "responsibilities": [
+          "Game Design",
+          "Système d'équipement, de mouvement et de combat",
+          "Application évolutive et configurable"
+        ],
+        "technologies": [
+          "HTML5",
+          "CSS3",
+          "JavaScript ES6",
+          "OOP",
+          "Git",
+          "Adobe XD",
+          "Illustrator"
+        ]
+      },
+      {
+        "position": "Développeur Frontend",
+        "company": "We Eat",
+        "employment_type": "Projet Personnel",
+        "dates": {
+          "start": "2019",
+          "end": "2019"
+        },
+        "responsibilities": [
+          "UX/UI Web Design",
+          "Intégration web",
+          "Intégration de l'API Google Maps + StreetView",
+          "Module d'ajout et de notation de restaurants"
+        ],
+        "technologies": [
+          "HTML5",
+          "CSS3",
+          "JavaScript ES6",
+          "Google Maps API",
+          "Google StreetView API",
+          "JSON",
+          "Git",
+          "Adobe XD"
+        ]
+      },
+      {
+        "position": "Assistant Création Web & Print",
+        "company": "L'AGENT X",
+        "employment_type": "Apprentissage",
+        "dates": {
+          "start": "2016",
+          "end": "2018"
+        },
+        "responsibilities": [
+          "UI Web Design",
+          "Publication Assistée par Ordinateur (PAO)"
+        ],
+        "technologies": [
+          "Sketch",
+          "Adobe XD",
+          "InDesign",
+          "Illustrator",
+          "Photoshop"
+        ]
       }
     ],
-    "database": [
-      {
-        "title": "MySQL",
-        "level": 3,
-        "image": "icons/icon-mysql.svg"
-      }
-    ],
-    "soft": [
-      {
-        "title": "Problem-solving",
-        "level": 5,
-        "image": "icons/icon-problem-solving.svg"
-      },
-      {
-        "title": "Stress management",
-        "level": 5,
-        "image": "icons/icon-stress.svg"
-      },
-      {
-        "title": "Organization",
-        "level": 5,
-        "image": "icons/icon-organisation.svg"
-      },
-      {
-        "title": "Optimisation",
-        "level": 5,
-        "image": "icons/icon-optimisation.svg"
-      },
-      {
-        "title": "Collaboration",
-        "level": 5,
-        "image": "icons/icon-teamwork.svg"
-      },
-      {
-        "title": "Adaptability",
-        "level": 5,
-        "image": "icons/icon-adaptability.svg"
-      }
-    ],
-    "project": [
-      {
-        "title": "Agile",
-        "level": 4,
-        "image": "icons/icon-agile.svg"
-      },
-      {
-        "title": "UML",
-        "level": 4,
-        "image": "icons/icon-uml.svg"
-      }
-    ],
-    "designtools": [
-      {
-        "title": "Figma",
-        "level": 5,
-        "image": "icons/icon-figma.svg"
-      },
-      {
-        "title": "Adobe XD",
-        "level": 4,
-        "image": "icons/icon-xd.svg"
-      },
-      {
-        "title": "Sketch",
-        "level": 4,
-        "image": "icons/icon-sketch.svg"
-      },
-      {
-        "title": "Photoshop",
-        "level": 5,
-        "image": "icons/icon-ps.svg"
-      },
-      {
-        "title": "Illustrator",
-        "level": 5,
-        "image": "icons/icon-ai.svg"
-      },
-      {
-        "title": "InDesign",
-        "level": 5,
-        "image": "icons/icon-id.svg"
-      }
-    ],
-    "versioning": [
-      {
-        "title": "Git",
-        "level": 5,
-        "image": "icons/icon-git.svg"
-      },
-      {
-        "title": "GitHub",
-        "level": 5,
-        "image": "icons/icon-github.svg"
-      },
-      {
-        "title": "Azure DevOps",
-        "level": 3,
-        "image": "icons/icon-azure.svg"
-      }
-    ],
-    "devtools": [
-      {
-        "title": "VS Code",
-        "level": 5,
-        "image": "icons/icon-vscode.svg"
-      },
-      {
-        "title": "Copilot",
-        "level": 5,
-        "image": "icons/icon-copilot.svg"
-      }
-    ],
-    "package": [
-      {
-        "title": "npm",
-        "level": 5,
-        "image": "icons/icon-npm.svg"
-      }
-    ],
-    "design": [
-      {
-        "title": "Design System",
-        "level": 5,
-        "image": "icons/icon-designsystem.svg"
-      }
-    ],
-    "app": [
-      {
-        "title": "Notion",
-        "level": 5,
-        "image": "icons/icon-notion.svg"
-      },
-      {
-        "title": "Trello",
-        "level": 5,
-        "image": "icons/icon-trello.svg"
-      }
-    ],
-    "learning": [
-      {
-        "title": "Learning",
-        "level": 5,
-        "image": "icons/icon-learning.svg"
-      }
-    ]
+    "skills": {
+      "front": [
+        {
+          "title": "HTML5",
+          "level": 5,
+          "image": "icons/icon-html.svg"
+        },
+        {
+          "title": "CSS3",
+          "level": 5,
+          "image": "icons/icon-css.svg"
+        },
+        {
+          "title": "JS ES6",
+          "level": 5,
+          "image": "icons/icon-js.svg"
+        },
+        {
+          "title": "Vue.js",
+          "level": 5,
+          "image": "icons/icon-vuejs.svg"
+        },
+        {
+          "title": "Nuxt.js",
+          "level": 5,
+          "image": "icons/icon-nuxt.svg"
+        },
+        {
+          "title": "Sass",
+          "level": 5,
+          "image": "icons/icon-sass.svg"
+        },
+        {
+          "title": "Bootstrap",
+          "level": 5,
+          "image": "icons/icon-bootstrap.svg"
+        },
+        {
+          "title": "tailwindcss",
+          "level": 5,
+          "image": "icons/icon-tailwind.svg"
+        },
+        {
+          "title": "jQuery",
+          "level": 5,
+          "image": "icons/icon-jquery.svg"
+        }
+      ],
+      "back": [
+        {
+          "title": "PHP",
+          "level": 3,
+          "image": "icons/icon-php.svg"
+        },
+        {
+          "title": "Node.js",
+          "level": 3,
+          "image": "icons/icon-nodejs.svg"
+        }
+      ],
+      "database": [
+        {
+          "title": "MySQL",
+          "level": 3,
+          "image": "icons/icon-mysql.svg"
+        }
+      ],
+      "soft": [
+        {
+          "title": "Résolution de problèmes",
+          "level": 5,
+          "image": "icons/icon-problem-solving.svg"
+        },
+        {
+          "title": "Gestion du stress",
+          "level": 5,
+          "image": "icons/icon-stress.svg"
+        },
+        {
+          "title": "Organisation",
+          "level": 5,
+          "image": "icons/icon-organisation.svg"
+        },
+        {
+          "title": "Optimisation",
+          "level": 5,
+          "image": "icons/icon-optimisation.svg"
+        },
+        {
+          "title": "Collaboration",
+          "level": 5,
+          "image": "icons/icon-teamwork.svg"
+        },
+        {
+          "title": "Adaptabilité",
+          "level": 5,
+          "image": "icons/icon-adaptability.svg"
+        }
+      ],
+      "project": [
+        {
+          "title": "Agile",
+          "level": 4,
+          "image": "icons/icon-agile.svg"
+        },
+        {
+          "title": "UML",
+          "level": 4,
+          "image": "icons/icon-uml.svg"
+        }
+      ],
+      "designtools": [
+        {
+          "title": "Figma",
+          "level": 5,
+          "image": "icons/icon-figma.svg"
+        },
+        {
+          "title": "Adobe XD",
+          "level": 4,
+          "image": "icons/icon-xd.svg"
+        },
+        {
+          "title": "Sketch",
+          "level": 4,
+          "image": "icons/icon-sketch.svg"
+        },
+        {
+          "title": "Photoshop",
+          "level": 5,
+          "image": "icons/icon-ps.svg"
+        },
+        {
+          "title": "Illustrator",
+          "level": 5,
+          "image": "icons/icon-ai.svg"
+        },
+        {
+          "title": "InDesign",
+          "level": 5,
+          "image": "icons/icon-id.svg"
+        }
+      ],
+      "versioning": [
+        {
+          "title": "Git",
+          "level": 5,
+          "image": "icons/icon-git.svg"
+        },
+        {
+          "title": "GitHub",
+          "level": 5,
+          "image": "icons/icon-github.svg"
+        },
+        {
+          "title": "Azure DevOps",
+          "level": 3,
+          "image": "icons/icon-azure.svg"
+        }
+      ],
+      "devtools": [
+        {
+          "title": "VS Code",
+          "level": 5,
+          "image": "icons/icon-vscode.svg"
+        },
+        {
+          "title": "Copilot",
+          "level": 5,
+          "image": "icons/icon-copilot.svg"
+        }
+      ],
+      "package": [
+        {
+          "title": "npm",
+          "level": 5,
+          "image": "icons/icon-npm.svg"
+        }
+      ],
+      "design": [
+        {
+          "title": "Design System",
+          "level": 5,
+          "image": "icons/icon-designsystem.svg"
+        }
+      ],
+      "app": [
+        {
+          "title": "Notion",
+          "level": 5,
+          "image": "icons/icon-notion.svg"
+        },
+        {
+          "title": "Trello",
+          "level": 5,
+          "image": "icons/icon-trello.svg"
+        }
+      ],
+      "learning": [
+        {
+          "title": "Learning",
+          "level": 5,
+          "image": "icons/icon-learning.svg"
+        }
+      ]
+    }
   }
 }

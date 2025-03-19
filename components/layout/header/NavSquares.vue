@@ -1,7 +1,40 @@
 <script setup>
 const { scrollToAnchor } = useAnchorScroll();
-const route = useRoute();
-let navLinks = route.meta.innerNavLinks;
+
+const lang = inject("lang");
+
+const navLinks = reactive([
+  {
+    name: computed(() => (lang.value === "fr" ? "Hello !" : "Hello!")),
+    href: "#hero",
+    active: true,
+  },
+  {
+    name: computed(() => (lang.value === "fr" ? "En bref" : "Briefly")),
+    href: "#about",
+    active: false,
+  },
+  {
+    name: computed(() => (lang.value === "fr" ? "Parcours" : "Education")),
+    href: "#education",
+    active: false,
+  },
+  {
+    name: computed(() => (lang.value === "fr" ? "Expérience" : "Experience")),
+    href: "#experience",
+    active: false,
+  },
+  {
+    name: computed(() => (lang.value === "fr" ? "Compétences" : "Skills")),
+    href: "#skills",
+    active: false,
+  },
+  {
+    name: computed(() => (lang.value === "fr" ? "Contact" : "Contact")),
+    href: "#thankyou",
+    active: false,
+  },
+]);
 
 const scrollTo = (link) => {
   scrollToAnchor(link.href);
