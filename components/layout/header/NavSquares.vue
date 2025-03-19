@@ -181,6 +181,7 @@ let isHovered = ref(false);
   left: 0;
   width: 200px;
   height: 100vh;
+  height: 100dvh;
 }
 
 #layer {
@@ -190,6 +191,7 @@ let isHovered = ref(false);
   left: 0;
   width: 200px;
   height: 100vh;
+  height: 100dvh;
   background-color: rgba(0, 0, 0, 0.5);
 
   animation: 0.3s forwards alternate fadeIn;

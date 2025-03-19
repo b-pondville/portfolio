@@ -193,6 +193,7 @@ onMounted(() => {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  height: 100dvh;
   gap: 0.5rem;
   background-color: $bkg-color;
 
@@ -214,6 +215,7 @@ onMounted(() => {
 
   @include breakpoint(tablet) {
     height: 50vh;
+    height: 50dvh;
   }
 }
 
@@ -225,10 +227,6 @@ onMounted(() => {
   height: 100%;
   background-color: $primary-color;
   z-index: -1;
-
-  @include breakpoint(tablet) {
-    left: 50%;
-  }
 
   @include breakpoint(mobile) {
     display: none;
@@ -245,6 +243,7 @@ onMounted(() => {
 
 #about {
   height: 100vh;
+  height: 100dvh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
@@ -549,6 +548,7 @@ onMounted(() => {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  height: 100dvh;
   background-color: $bkg-color;
   padding: 25px;
 
