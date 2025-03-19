@@ -9,18 +9,11 @@
       "linkedin": "https://www.linkedin.com/in/benjamin-pondville-45507314b/"
     },
     "bio": [
-      "Hi, I'm Benjamin, a front-end developer specializing in Vue.js and Nuxt.js. Passionate about clean, maintainable code and intuitive user experiences, I focus on building high-performance web applications that seamlessly blend functionality and aesthetics.",
+      "Hi, I'm a front-end developer specializing in Vue.js and Nuxt.js. Passionate about clean, maintainable code and intuitive user experiences, I focus on building high-performance web applications that seamlessly blend functionality and aesthetics.",
       "With a keen eye for detail and a strong problem-solving mindset, I thrive on crafting engaging interfaces, optimizing performance, and ensuring smooth user interactions. Beyond coding, I stay up to date with the latest web technologies to continuously refine my skills and deliver modern, efficient solutions.",
       "If you're looking for a dedicated front-end developer to enhance your team or project, let's connect!"
     ],
     "education": [
-      {
-        "program": "Web Developer",
-        "institution": "Self-Taught",
-        "start": "2020",
-        "end": "Lifelong Learning",
-        "degree": "Experience and Practice"
-      },
       {
         "program": "Frontend Developer",
         "institution": "OpenClassrooms",
@@ -50,7 +43,7 @@
         "employment_type": "Self-employed",
         "dates": {
           "start": "2024",
-          "end": "Present"
+          "end": "Now"
         },
         "responsibilities": [
           "Design, development, and deployment of web and SaaS solutions",
@@ -447,18 +440,11 @@
       "linkedin": "https://www.linkedin.com/in/benjamin-pondville-45507314b/"
     },
     "bio": [
-      "Bonjour, je suis Benjamin, un développeur front-end spécialisé en Vue.js et Nuxt.js. Passionné par un code propre et maintenable ainsi que par des expériences utilisateur intuitives, je me concentre sur la création d'applications web performantes alliant fonctionnalité et esthétique.",
+      "Hello ! Je suis développeur front-end spécialisé en Vue.js et Nuxt.js. Passionné par un code propre et maintenable ainsi que par des expériences utilisateur intuitives, je me concentre sur la création d'applications web performantes alliant fonctionnalité et esthétique.",
       "Avec un sens aigu du détail et une forte capacité à résoudre des problèmes, je m'épanouis dans la conception d'interfaces engageantes, l'optimisation des performances et l'assurance d'interactions utilisateur fluides. Au-delà du code, je me tiens à jour sur les dernières technologies web pour affiner continuellement mes compétences et fournir des solutions modernes et efficaces.",
       "Si vous recherchez un développeur front-end dédié pour renforcer votre équipe ou projet, connectons-nous !"
     ],
     "education": [
-      {
-        "program": "Développeur Web",
-        "institution": "Autodidacte",
-        "start": "2020",
-        "end": "Apprentissage continu",
-        "degree": "Expérience et pratique"
-      },
       {
         "program": "Développeur Frontend",
         "institution": "OpenClassrooms",
@@ -488,7 +474,7 @@
         "employment_type": "Indépendant",
         "dates": {
           "start": "2024",
-          "end": "Présent"
+          "end": "Aujourd'hui"
         },
         "responsibilities": [
           "Conception, développement et déploiement de solutions web et SaaS",
