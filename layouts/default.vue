@@ -90,9 +90,9 @@ const downloadPdf = () => {
 // Fonction pour que si l'utilisateur est bientôt en bas de page scroll jusqu'au bas de page
 if (import.meta.env.SSR === false) {
   let lastScrollPosition = 0;
-  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const isntTactile = window.matchMedia("(hover: hover)").matches;
 
-  if (!isMobile) {
+  if (isntTactile) {
     window.addEventListener("scroll", () => {
       const currentScrollPosition = window.scrollY;
       if (
