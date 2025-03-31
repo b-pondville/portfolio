@@ -57,7 +57,8 @@ onMounted(() => {
 
     <section id="education">
       <div class="content">
-        {{ lang === "fr" ? "Parcours" : "Education" }}
+        <h2>{{ lang === "fr" ? "Parcours" : "Education" }}</h2>
+
         <div
           v-for="(school, index) in currentCvData.education"
           :class="[indexIsPair(index) ? 'left' : 'right']"
@@ -81,7 +82,7 @@ onMounted(() => {
 
     <section id="experience">
       <div class="content">
-        {{ lang === "fr" ? "Expérience" : "Experience" }}
+        <h2>{{ lang === "fr" ? "Expérience" : "Experience" }}</h2>
 
         <div
           v-for="(job, index) in currentCvData.experience"
