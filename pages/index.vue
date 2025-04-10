@@ -38,7 +38,6 @@ onMounted(() => {
     <section id="hero">
       <h1 v-motion-slide-visible-once-bottom>
         {{ currentCvData.name }}<strong>{{ currentCvData.surname }}</strong>
-        {{ test }}
       </h1>
       <p class="title" v-motion-slide-visible-once-bottom>
         {{ currentCvData.title }}
@@ -51,7 +50,7 @@ onMounted(() => {
         <h2>
           {{ lang === "fr" ? "À propos de moi" : "About me" }}
         </h2>
-        <p v-for="p in currentCvData.bio">{{ p }}</p>
+        <p v-for="p in currentCvData.bio" v-html="p"></p>
       </div>
     </section>
 
@@ -82,7 +81,7 @@ onMounted(() => {
 
     <section id="experience">
       <div class="content">
-        <h2>{{ lang === "fr" ? "Expérience" : "Experience" }}</h2>
+        <h2>{{ lang === "fr" ? "Expériences" : "Experiences" }}</h2>
 
         <div
           v-for="(job, index) in currentCvData.experience"
@@ -97,10 +96,13 @@ onMounted(() => {
           :delay="animDelay"
         >
           <p class="date">{{ job.dates.start + " - " + job.dates.end }}</p>
-          <p class="txt-bold">
-            {{ job.position + " / " + job.company }}
+          <p>
+            <span class="position">{{ job.position }}</span>
+            <span class="company txt-italic">{{ " - " + job.company }}</span>
           </p>
-          <p class="txt-bold">Responsibilities</p>
+          <p class="txt-bold">
+            {{ lang === "fr" ? "Responsabilités" : "Responsibilities" }}
+          </p>
           <ul class="responsibilities">
             <li v-for="line in job.responsibilities">
               {{ line }}
@@ -211,7 +213,7 @@ onMounted(() => {
     font-size: 1.5rem;
     text-transform: uppercase;
     line-height: 1.2;
-    font-weight: lighter;
+    font-weight: 300;
     text-align: center;
   }
 
@@ -287,6 +289,11 @@ onMounted(() => {
     max-width: 400px;
     justify-self: start;
 
+    p {
+      ::v-deep(strong) {
+        font-weight: bold;
+      }
+    }
     p + p {
       margin-top: 1.5rem;
     }
@@ -334,6 +341,16 @@ onMounted(() => {
     .date {
       font-weight: bold;
       color: $primary-color;
+    }
+
+    .position {
+      font-weight: bold;
+    }
+
+    .position,
+    .company {
+      color: $primary-color;
+      margin-top: 0;
     }
 
     .left {
