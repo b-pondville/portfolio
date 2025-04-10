@@ -54,7 +54,12 @@ const props = defineProps({
 
   &.primary {
     background-color: $primary-color;
-    color: white;
+    color: black;
+    font-weight: 600;
+
+    img {
+      filter: invert(1);
+    }
 
     &:hover {
       background-color: #d58700;
