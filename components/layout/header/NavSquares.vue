@@ -1,5 +1,6 @@
 <script setup>
 const { scrollToAnchor } = useAnchorScroll();
+const { x } = useMouse({ touch: false });
 
 const lang = inject("lang");
 
@@ -78,10 +79,19 @@ const returnStyleFromIndex = (index) => {
 };
 
 let isHovered = ref(false);
+
+watch(x, (newX) => {
+  if (newX > 0 && newX < 200) {
+    isHovered.value = true;
+  } else {
+    isHovered.value = false;
+  }
+});
 </script>
 
 <template>
-  <div id="scroll-squares" @click.stop @mouseenter.prevent="isHovered = true">
+  <div id="scroll-squares" @click.stop>
+    {{ x }}
     <button
       v-for="(link, index) in navLinks"
       :key="index"
@@ -89,11 +99,10 @@ let isHovered = ref(false);
       class="scroll-square"
       :class="{ active: link.active }"
       :title="link.name"
-      @click="scrollTo(link), (isHovered = false)"
+      @click="scrollTo(link)"
     >
       <span class="square" :style="returnStyleFromIndex(index)"></span>
       <label
-        @mouseenter.prevent="isHovered = true"
         v-motion
         :initial="{ opacity: 0, transform: 'translate(-20px, -48%)' }"
         :visible="{ opacity: 1, transform: 'translate(0px, -48%' }"
@@ -104,12 +113,7 @@ let isHovered = ref(false);
     </button>
   </div>
   <div v-show="isHovered" id="layer"></div>
-  <div
-    id="layer-trigger"
-    @mouseenter.prevent="isHovered = true"
-    @mouseleave.prevent="isHovered = false"
-    @click.prevent
-  ></div>
+  <div id="layer-trigger" @click.prevent></div>
 </template>
 
 <style lang="scss" scoped>

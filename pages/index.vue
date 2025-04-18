@@ -71,8 +71,11 @@ onMounted(() => {
           :delay="animDelay"
         >
           <p class="date">{{ school.start + " - " + school.end }}</p>
-          <p class="txt-bold">
-            {{ school.program + " / " + school.institution }}
+          <p>
+            <span class="position">{{ school.program }}</span>
+            <span class="company txt-italic">{{
+              " - " + school.institution
+            }}</span>
           </p>
           <p>{{ school.degree }}</p>
         </div>
