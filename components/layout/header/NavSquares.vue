@@ -91,7 +91,6 @@ watch(x, (newX) => {
 
 <template>
   <div id="scroll-squares" @click.stop>
-    {{ x }}
     <button
       v-for="(link, index) in navLinks"
       :key="index"
